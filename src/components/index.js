@@ -8,3 +8,4 @@ export { Counter } from "./Counter";
 export { OrderList } from "./OrderList";
 export { Search } from "./Search";
 export { CustomSelect } from "./CustomSelect";
+export { ButtonUp } from "./ButtonUp";

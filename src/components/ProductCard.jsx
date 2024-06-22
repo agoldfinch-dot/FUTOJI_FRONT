@@ -46,7 +46,7 @@ export const ProductCard = ({ selectedCategory, product }) => {
                 <div>
                   <div className="product_img" onClick={() => handleProductClick(item)}>
                     {item.image ? (
-                      <img src={getImageUrl(item.image)} alt={item.name} />
+                      <img src={getImageUrl(item.image)} loading="lazy" alt={item.name} />
                     ) : (
                       <span className="no_img">Нет изображения</span>
                     )}

@@ -1,0 +1,17 @@
+.ButtonUp
+{
+    color: #fff;
+    position: fixed;
+    background-color: #fc3f1d;
+    right: 20px;
+    bottom: 0px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 50px;
+    z-index: 100;
+}

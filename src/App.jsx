@@ -1,4 +1,5 @@
 import { Footer, Header } from "./layouts";
+import { ButtonUp } from './components';
 import { AppRoutes } from "./routes";
 import { BasketProvider } from "./context/BasketContext";
 import { ToastContainer } from "react-toastify";
@@ -12,6 +13,7 @@ function App() {
       <main className="main">
         <AppRoutes />
       </main>
+      <ButtonUp/>
       <Footer />
     </BasketProvider>
   );

@@ -364,7 +364,7 @@ export const CategoriesTab = () => {
               onClick={() => handleCategoryClick(category)}
               className={productName === category.name ? "active" : ""}
             >
-              {category.name}
+              <h2>{category.name}</h2>
             </li>
           ))}
         </ul>

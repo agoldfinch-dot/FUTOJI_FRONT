@@ -52,14 +52,28 @@
       font-weight: 500;
       line-height: 12.02px;
       color: #fc3f1d;
-      text-decoration: underline;
+      text-decoration: none;
       cursor: pointer;
       transition: all 0.2s linear;
-      &:hover,
+      background-color: #3f3d3e27;
+      min-height: 5vh;
+      display: block;
+      width: 15vw;
+      padding: 1.5rem;
+      &:hover {
+        background-color: #2423239c;
+        color: #adadad;
+      }
       &.active {
         color: #adadad;
-        text-decoration: none;
+        background-color: #6b686aa2;
       }
+    }
+    h2 {
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 20px;
+      text-align: center;
     }
   }
 }

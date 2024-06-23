@@ -44,7 +44,8 @@
     margin: 0 auto;
   }
 }
-@media only screen and (min-width: 993px) {
+@media only screen and (min-width: 1200px) {
+  
   .header_menu {
     display: none;
   }
@@ -826,7 +827,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1200px) {
   .modal {
     height: unset;
   }
@@ -879,6 +880,8 @@
     border: none;
   }
   .categories__tabs {
+    overflow-x: auto;
+    // margin: 88px 40 0 0;
     &::-webkit-scrollbar {
       height: 5px;
     }

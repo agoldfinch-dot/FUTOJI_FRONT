@@ -66,6 +66,12 @@ body {
   font-style: normal;
   background-color: #0e1018ff;
   color: #fff;
+  &::-webkit-scrollbar {
+    color:  rgba(14, 16, 24, 0.493);
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #fc3f1d;
+  }
 }
 
 body.active {

@@ -40,6 +40,14 @@
 
 // categories__tabs
 .categories__tabs {
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    height: 1vh;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #fc3f1d;
+  }
   margin: 88px 40px 0 40px;
   border-bottom: 1px solid #adadad;
   ul {

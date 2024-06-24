@@ -11,12 +11,12 @@ export const МadeОrder = () => {
 
   const storedResponseData = localStorage.getItem("orderData");
   const responseData = JSON.parse(storedResponseData);
-  let deliveryAddress = responseData?.delivery?.address;
+  let deliveryAddress = location?.state?.deliveryAddress
 
   const handleShowOrderList = () => {
     setShowOrderList(!showOrderList);
   };
-  if (deliveryAddress === "") deliveryAddress = "Самовывоз"
+  if (deliveryAddress === undefined || deliveryAddress === "") deliveryAddress = "Самовывоз"
   return (
     <div className="madeorder_page information_page basket__page">
       <div className="parent_relative">

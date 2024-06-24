@@ -945,7 +945,7 @@ export const MakingOrder = () => {
                 <OrderList
                   deliveryAddress={
                     deliveryMethod === "delivery"
-                      ? `${address}, дом ${house}, квартира/офис ${kvartira} ${etaj !== "" ? `, этаж ${etaj}`: ""}`
+                      ? `${address}, дом ${house}, квартира/офис ${kvartira}${etaj !== "" ? `, этаж ${etaj}`: ""}`
                       : "г. Лакинск, ул. Парижская Коммуны, д. 24"
                   }
                 />
@@ -956,7 +956,7 @@ export const MakingOrder = () => {
                 <OrderList
                   deliveryAddress={
                     deliveryMethod === "delivery"
-                      ? `${address}, дом ${house}, квартира/офис ${kvartira} ${etaj !== "" ? `, этаж ${etaj}`: ""}`
+                      ? `${address}, дом ${house}, квартира/офис ${kvartira}${etaj !== "" ? `, этаж ${etaj}`: ""}`
                       : "г. Лакинск, ул. Парижская Коммуны, д. 24"
                   }
                 />

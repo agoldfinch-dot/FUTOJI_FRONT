@@ -244,7 +244,8 @@
 .parent_box {
   min-height: 400px;
   position: relative;
-
+  background-image: url("/src/assets/gradient-big.webp");
+  background-size: cover;
   .gradient_big {
     position: absolute;
     top: 0;

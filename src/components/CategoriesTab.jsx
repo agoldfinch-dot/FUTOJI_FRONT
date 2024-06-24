@@ -390,7 +390,6 @@ export const CategoriesTab = () => {
 
       {selectedCategory && (
         <div className="parent_box">
-          <img className="gradient_big" src={assets.gradientBig} alt="" />
           <div className="main_container" style={{ textAlign: "center" }}>
             {isLoading ? (
               <Loader />

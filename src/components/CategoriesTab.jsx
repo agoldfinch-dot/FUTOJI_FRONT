@@ -226,6 +226,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { BasketContext } from "../context/BasketContext";
 import { toast } from "react-toastify";
 import { CustomSelect } from "./CustomSelect";
+import { ButtonUp } from "./ButtonUp";
 
 export const CategoriesTab = () => {
   const [categories, setCategories] = useState([]);
@@ -250,13 +251,20 @@ export const CategoriesTab = () => {
           const initialCategory = productName
             ? categoriesData.find((cat) => cat.name === productName)
             : categoriesData[0];
-
+          document.title = `FUTOJI: ${productName}`
           if (initialCategory) {
             const categoryDetails = await getCategoryById(initialCategory.id);
             setSelectedCategory({
               name: initialCategory.name,
               products: categoryDetails.data.data,
             });
+            if (initialCategory.name == "WOK") 
+            {
+              setSelectedProduct(categoryDetails.data.data[0]);
+              setSelectedNoodle(null);
+              setSelectedSauce(null);
+            }
+
           }
         }
       } catch (error) {
@@ -273,8 +281,6 @@ export const CategoriesTab = () => {
       const product = selectedCategory.products.find(
         (prod) => prod.id === 1927,
       );
-      console.log(product)
-      console.log(selectedCategory.products)
       setSelectedProduct(product);
       setSelectedNoodle(null);
       setSelectedSauce(null);
@@ -305,6 +311,18 @@ export const CategoriesTab = () => {
     }
   };
 
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      let isHidden = "hidden"
+      // определяем величину прокрутки
+      const scrollY = window.scrollY || document.documentElement.scrollTop;
+      // если страница прокручена больше чем на 400px, то делаем кнопку видимой, иначе скрываем
+      scrollY > 400 ? isHidden= "visible": isHidden="hidden";
+      document.getElementsByClassName("ButtonUp")[0].style.visibility = isHidden;
+    });
+  }
+
+  )
   const handleProductChange = (productId) => {
     const product = selectedCategory.products.find(
       (prod) => prod.id === parseInt(productId),

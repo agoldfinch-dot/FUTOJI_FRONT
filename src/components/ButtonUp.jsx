@@ -1,14 +1,7 @@
 import React from 'react';
 import './ButtonUp.scss'
 
-export function ButtonUp() {
-    let isHidden = "hidden";
-	window.addEventListener('scroll', () => {
-        // определяем величину прокрутки
-        const scrollY = window.scrollY || document.documentElement.scrollTop;
-        // если страница прокручена больше чем на 400px, то делаем кнопку видимой, иначе скрываем
-        scrollY > 400 ? isHidden= "visible": isHidden="hidden";
-    });
+export function ButtonUp(isHidden) {
 	const handlerScrollUp = () => {
 		window.scrollTo({
             top: 0,
@@ -18,6 +11,6 @@ export function ButtonUp() {
 	}
 	
 	return (
-		<div className={'ButtonUp'} style={{visibility: isHidden}} onClick={handlerScrollUp}>&#9650;</div>
+		<div className={'ButtonUp'} style={{visibility: "hidden"}} onClick={handlerScrollUp}>&#9650;</div>
 	);
 }

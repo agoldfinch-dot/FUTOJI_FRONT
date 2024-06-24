@@ -14,13 +14,13 @@ export const ProductCard = ({ selectedCategory, product }) => {
       const isProductInBasket = basket.some((item) => item.id === product.id);
       if (!isProductInBasket) {
         addToBasket(product);
-        toast.success("Продукт был добавлен в корзину");
+        toast.success("Продукт был добавлен в корзину", {autoClose: 1500, closeOnClick: true, pauseOnHover: false, theme: "dark"});
         setShowModal(false);
       } else {
-        toast.info("Продукт уже находится в корзине");
+        toast.info("Продукт уже находится в корзине", {autoClose: 1500, closeOnClick: true, pauseOnHover: false, theme: "dark"});
       }
     } else {
-      toast.error("Произошла ошибка, попробуйте еще раз");
+      toast.error("Произошла ошибка, попробуйте еще раз", {autoClose: 1500, closeOnClick: true, pauseOnHover: false, theme: "dark"});
     }
   };
   const handleProductClick = (product) => {
@@ -42,9 +42,9 @@ export const ProductCard = ({ selectedCategory, product }) => {
         <div className="category_details">
           {selectedCategory?.map((item) => (
             <div className="category_details-card" key={item.id}>
-              <div className="products__box">
-                <div>
-                  <div className="product_img" onClick={() => handleProductClick(item)}>
+              <div className="products__box" >
+                <div onClick={() => handleProductClick(item)}>
+                  <div className="product_img" >
                     {item.image ? (
                       <img src={getImageUrl(item.image)} loading="lazy" alt={item.name} />
                     ) : (
@@ -54,9 +54,7 @@ export const ProductCard = ({ selectedCategory, product }) => {
                   <h4 className="product_name">{item.name}</h4>
                   {item.description && (
                     <p className="desc">
-                      {item.description?.length > 300
-                        ? `${item.description.slice(0, 300)}...`
-                        : item.description}
+                      {item.description}
                     </p>
                   )}
                 </div>

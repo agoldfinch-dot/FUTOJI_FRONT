@@ -363,12 +363,12 @@ export const CategoriesTab = () => {
 
       if (!isProductWithModsInBasket) {
         addToBasket(productWithMods);
-        toast.success("Продукт был добавлен в корзину");
+        toast.success("Продукт был добавлен в корзину", {autoClose: 1500, closeOnClick: true, pauseOnHover: false, theme: "dark"});
       } else {
-        toast.info("Продукт уже находится в корзине");
+        toast.info("Продукт уже находится в корзине", {autoClose: 1500, closeOnClick: true, pauseOnHover: false, theme: "dark"});
       }
     } else {
-      toast.error("Произошла ошибка, попробуйте еще раз");
+      toast.error("Произошла ошибка, попробуйте еще раз", {autoClose: 1500, closeOnClick: true, pauseOnHover: false, theme: "dark"});
     }
   };
 

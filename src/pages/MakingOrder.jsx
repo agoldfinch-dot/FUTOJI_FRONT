@@ -495,8 +495,8 @@ const isValidPhoneNumber = (phoneNumber) =>
 const isValidUserName = (userName) => userName && userName.length > 0;
 
 // Yetkazib berish uchun manzil tekshirilishi
-const isValidAddress = (deliveryMethod, address, house, kvartira, etaj) =>
-  deliveryMethod !== "delivery" || (address && house && kvartira && etaj);
+const isValidAddress = (deliveryMethod, address, house, kvartira) =>
+  deliveryMethod !== "delivery" || (address && house && kvartira);
 
 // Yetkazib berish vaqti tekshirilishi
 const isValidDeliveryTime = (deliveryTime, selectedOption, options) =>
@@ -591,12 +591,11 @@ export const MakingOrder = () => {
       document.querySelector("input[name='name']").focus();
       return false;
     }
-    if (!isValidAddress(deliveryMethod, address, house, kvartira, etaj)) {
+    if (!isValidAddress(deliveryMethod, address, house, kvartira)) {
       toast.error("Пожалуйста, введите полный адрес.");
       if (!address) document.querySelector("input[name='address']").focus();
       else if (!house) document.querySelector(".house").focus();
       else if (!kvartira) document.querySelector(".kvartira").focus();
-      else if (!etaj) document.querySelector(".etaj").focus();
       return false;
     }
     if (!isValidDeliveryTime(deliveryTime, selectedOption, options)) {
@@ -640,7 +639,7 @@ export const MakingOrder = () => {
     // Change the address and isPickup fields based on the delivery method
     const fullAddress =
       deliveryMethod === "delivery"
-        ? `${address}, дом ${house}, квартира/офис ${kvartira}, этаж ${etaj}`
+        ? `${address}, дом ${house}, квартира/офис ${kvartira}${etaj !== "" ? `, этаж ${etaj}`: ""}`
         : null;
 
     const orderData = {
@@ -946,7 +945,7 @@ export const MakingOrder = () => {
                 <OrderList
                   deliveryAddress={
                     deliveryMethod === "delivery"
-                      ? `${address}, дом ${house}, квартира/офис ${kvartira}, этаж ${etaj}`
+                      ? `${address}, дом ${house}, квартира/офис ${kvartira} ${etaj !== "" ? `, этаж ${etaj}`: ""}`
                       : "г. Лакинск, ул. Парижская Коммуны, д. 24"
                   }
                 />
@@ -957,7 +956,7 @@ export const MakingOrder = () => {
                 <OrderList
                   deliveryAddress={
                     deliveryMethod === "delivery"
-                      ? `${address}, дом ${house}, квартира/офис ${kvartira}, этаж ${etaj}`
+                      ? `${address}, дом ${house}, квартира/офис ${kvartira} ${etaj !== "" ? `, этаж ${etaj}`: ""}`
                       : "г. Лакинск, ул. Парижская Коммуны, д. 24"
                   }
                 />

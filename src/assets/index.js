@@ -17,38 +17,19 @@ import footerLogo4 from "./logo/footer_logo4.svg";
 import homeSlider from "./home_slider.png";
 import gradientBig from "./gradient-big.webp";
 import gradientBigMedia from "./gradient_big_media.png";
-import product1 from "./product1.png";
-import product2 from "./product2.png";
-import product3 from "./product3.png";
-import product4 from "./product4.png";
-import product5 from "./product5.png";
-import product6 from "./product6.png";
-import product7 from "./product7.png";
-import product8 from "./product8.png";
+import product1 from "./product1.jpg";
+import product2 from "./product2.jpg";
+import product3 from "./product3.jpg";
+import product4 from "./product4.jpg";
+import product5 from "./product5.jpg";
+import product6 from "./product6.jpg";
+import product7 from "./product7.jpg";
+import product8 from "./product8.jpg";
 import topGradient from "./top-gradient.webp";
 import closeIcon from "./icons/close-icon.svg";
 import minusIcon from "./icons/minus-icon.svg";
 import plusIcon from "./icons/plus-icon.svg";
-import productMedia1 from "./product_media1.png";
-import productMedia2 from "./product_media2.png";
-import productMedia3 from "./product_media3.png";
-import productMedia4 from "./product_media4.png";
-import productMedia5 from "./product_media5.png";
-import productMedia7 from "./product_media7.png";
-import productMedia7_2 from "./productmedia7.png";
-import mediaProductImg1 from "./media-product-1.png";
-import mediaProductImg6 from "./product-media-6.png";
-import mediaProduct4 from "./product-media-4.png";
-import mediaProduct3 from "./product-media-3.png";
-import mediaProduct8 from "./product-media-8.png";
-import img1 from "./img-1.png";
-import img2 from "./img-2.png";
-import img3 from "./img-3.png";
-import img4 from "./img-4.png";
-import img5 from "./img-5.png";
-import img6 from "./img-6.png";
-import img7 from "./img-7.png";
-import img8 from "./img-8.png";
+
 
 export default {
   headerBurger,
@@ -82,24 +63,4 @@ export default {
   closeIcon,
   minusIcon,
   plusIcon,
-  productMedia1,
-  productMedia2,
-  productMedia3,
-  productMedia4,
-  productMedia5,
-  productMedia7,
-  productMedia7_2,
-  mediaProductImg1,
-  mediaProductImg6,
-  mediaProduct4,
-  mediaProduct3,
-  mediaProduct8,
-  img1,
-  img2,
-  img3,
-  img4,
-  img5,
-  img6,
-  img7,
-  img8,
 };

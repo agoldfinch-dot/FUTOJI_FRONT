@@ -107,12 +107,7 @@ export const Home = () => {
         </div>
       </section>
       <section className="products">
-        <img className="gradient_big" loading="lazy" src={assets.gradientBig} alt="" />
-        <img loading="lazy"
-          className="gradient_big_media"
-          src={assets.gradientBigMedia}
-          alt=""
-        />
+        
         <div className="products_in desktop_block">
           <div className="products_left">
             <Link to="/products/Сеты%20и%20наборы" className="products_block product_one">

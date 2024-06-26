@@ -31,7 +31,7 @@ export const Home = () => {
   return (
     <>
       <section className="home">
-        <img className="top_gradient" src={assets.topGradient} alt="" />
+        <img loading="lazy" className="top_gradient" src={assets.topGradient} alt="" />
         <div className="home_container">
           <button className="home-button-prev" onClick={goPrev}>
             <svg
@@ -64,28 +64,28 @@ export const Home = () => {
             loop={true}
           >
             <SwiperSlide>
-              <img src="https://sun1-84.userapi.com/impg/9jzc9OCc-48I6OKoxRskOgzzihHUCAfKumrgkw/9g6l1GKlEME.jpg?size=2560x1706&quality=95&sign=7607cff233546fcb4d7c8f67e0aaa538&type=album" alt="" />
+              <img loading="lazy" src="https://sun1-84.userapi.com/impg/9jzc9OCc-48I6OKoxRskOgzzihHUCAfKumrgkw/9g6l1GKlEME.jpg?size=2560x1706&quality=95&sign=7607cff233546fcb4d7c8f67e0aaa538&type=album" alt="" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="https://sun1-85.userapi.com/impg/xw-GfqMzPQOuQPqonkY7PR7dwq8lCTik2X5vhw/4dNG9WLlBV4.jpg?size=2560x1809&quality=95&sign=12580b14aa8ae1639ff37142c8792618&type=album" />
+              <img loading="lazy" src="https://sun1-85.userapi.com/impg/xw-GfqMzPQOuQPqonkY7PR7dwq8lCTik2X5vhw/4dNG9WLlBV4.jpg?size=2560x1809&quality=95&sign=12580b14aa8ae1639ff37142c8792618&type=album" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="https://sun1-24.userapi.com/impg/dpc-0GJ6LBkUJh32aUM9UlqB2julU-nod-tlnQ/P0AgLydZpBk.jpg?size=2560x1810&quality=95&sign=bd12c99ad730ae7a32ff21513c4a3d39&type=album" />
+              <img loading="lazy" src="https://sun1-24.userapi.com/impg/dpc-0GJ6LBkUJh32aUM9UlqB2julU-nod-tlnQ/P0AgLydZpBk.jpg?size=2560x1810&quality=95&sign=bd12c99ad730ae7a32ff21513c4a3d39&type=album" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="https://sun1-89.userapi.com/impg/ZB5i7RydvYpOvygIBZNAtjQ5mxUKewilFMejTQ/WIDq32o2FtA.jpg?size=2560x1810&quality=95&sign=7b82d66fad92adbd5f9f5e76ca8a9fec&type=album" />
+              <img loading="lazy" src="https://sun1-89.userapi.com/impg/ZB5i7RydvYpOvygIBZNAtjQ5mxUKewilFMejTQ/WIDq32o2FtA.jpg?size=2560x1810&quality=95&sign=7b82d66fad92adbd5f9f5e76ca8a9fec&type=album" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="https://sun1-54.userapi.com/impg/2pxCw3n23hneC1rE56fnFksLztNZmjXSnVSODQ/yeG1JvBl6sQ.jpg?size=2560x1809&quality=95&sign=7f917e8d69cce7c3ebb365281a59953e&type=album" />
+              <img loading="lazy" src="https://sun1-54.userapi.com/impg/2pxCw3n23hneC1rE56fnFksLztNZmjXSnVSODQ/yeG1JvBl6sQ.jpg?size=2560x1809&quality=95&sign=7f917e8d69cce7c3ebb365281a59953e&type=album" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="https://sun1-93.userapi.com/impg/UAPuQJ58EVqz3PY_fAea2ZQy6YKxakK8-9lpbg/2qhz4iqjyVY.jpg?size=2560x1810&quality=95&sign=f03f22a7d6956664a9fa8fec44bd1364&type=album" />
+              <img loading="lazy" src="https://sun1-93.userapi.com/impg/UAPuQJ58EVqz3PY_fAea2ZQy6YKxakK8-9lpbg/2qhz4iqjyVY.jpg?size=2560x1810&quality=95&sign=f03f22a7d6956664a9fa8fec44bd1364&type=album" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="https://sun1-55.userapi.com/impg/J-20r3smbCjDQd0FmjVak7Dib_qSyebUpcRZBw/tzbT6Dg6DIM.jpg?size=2560x1810&quality=95&sign=7a7090090631000223b1823ce3f5b696&type=album" />
+              <img loading="lazy" src="https://sun1-55.userapi.com/impg/J-20r3smbCjDQd0FmjVak7Dib_qSyebUpcRZBw/tzbT6Dg6DIM.jpg?size=2560x1810&quality=95&sign=7a7090090631000223b1823ce3f5b696&type=album" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="https://sun1-91.userapi.com/impg/kFhXwzZJPTINDb7nVkwOnABIgaNxidTPx9Z7NA/Unlc_PpRRvQ.jpg?size=2560x1809&quality=95&sign=f455d249ab26b33cdb2bd4b6d81a691f&type=album" />
+              <img loading="lazy" src="https://sun1-91.userapi.com/impg/kFhXwzZJPTINDb7nVkwOnABIgaNxidTPx9Z7NA/Unlc_PpRRvQ.jpg?size=2560x1809&quality=95&sign=f455d249ab26b33cdb2bd4b6d81a691f&type=album" />
             </SwiperSlide>
           </Swiper>
 
@@ -107,8 +107,8 @@ export const Home = () => {
         </div>
       </section>
       <section className="products">
-        <img className="gradient_big" src={assets.gradientBig} alt="" />
-        <img
+        <img className="gradient_big" loading="lazy" src={assets.gradientBig} alt="" />
+        <img loading="lazy"
           className="gradient_big_media"
           src={assets.gradientBigMedia}
           alt=""
@@ -116,7 +116,7 @@ export const Home = () => {
         <div className="products_in desktop_block">
           <div className="products_left">
             <Link to="/products/Сеты%20и%20наборы" className="products_block product_one">
-              <img src={assets.product1} id="sets" alt="" />
+              <img src={assets.product1} id="sets" loading="lazy" alt="" />
               <h6>СЕТЫ</h6>
             </Link>
             <div className="products_blocks">
@@ -124,7 +124,7 @@ export const Home = () => {
                 to="/products/Горячие%20роллы"
                 className="products_block mini_block product_blocks_in"
               >
-                <img src={assets.product2} alt="" />
+                <img src={assets.product2} loading="lazy" alt="" />
                 <h6>
                   ГОРЯЧИЕ
                   <br /> РОЛЛЫ
@@ -132,11 +132,11 @@ export const Home = () => {
               </Link>
               <div className="products_blocks_two product_blocks_in">
                 <Link to="/products/Пицца" className="products_block">
-                  <img src={assets.product3} alt="" />
+                  <img src={assets.product3} loading="lazy" alt="" />
                   <h6>ПИЦЦА</h6>
                 </Link>
                 <Link to="/products/WOK" className="products_block">
-                  <img src={assets.product4} alt="" />
+                  <img src={assets.product4} loading="lazy" alt="" />
                   <h6>ВОК</h6>
                 </Link>
               </div>
@@ -145,19 +145,19 @@ export const Home = () => {
           <div className="products_right">
             <div className="products_blocks">
               <Link to="/products/Холодные%20роллы" className="products_block product_blocks_in">
-                <img id="rolls" src={assets.product5} alt="" />
+                <img id="rolls" src={assets.product5} loading="lazy" alt="" />
                 <h6>ХОЛОДНЫЕ РОЛЛЫ</h6>
               </Link>
               <div className="products_blocks_two product_blocks_in">
                 <Link to="/products/Сяке%20маки" className="products_block mini_block">
-                  <img src={assets.product6} alt="" />
+                  <img src={assets.product6} loading="lazy" alt="" />
                   <h6>
                     СЯКИ
                     <br /> МАКИ
                   </h6>
                 </Link>
                 <Link to="/products/Фаст%20Фуд" className="products_block mini_block">
-                  <img src={assets.product7} alt="" />
+                  <img src={assets.product7} loading="lazy" alt="" />
                   <h6>
                     ФАСТ
                     <br />
@@ -167,7 +167,7 @@ export const Home = () => {
               </div>
             </div>
             <Link to="/products/Напитки" className="products_block product_one">
-              <img src={assets.product8} alt="" />
+              <img src={assets.product8} loading="lazy" alt="" />
               <h6>НАПИТКИ</h6>
             </Link>
           </div>
@@ -177,7 +177,7 @@ export const Home = () => {
         <div className="products_in desktop_media">
           <div className="products_left">
             <Link to="/products/Сеты%20и%20наборы"  className="products_block product_one">
-              <img id="sets" src={assets.product1} alt="" />
+              <img id="sets" src={assets.product1} loading="lazy" alt="" />
               <h6>
                 СЕТЫ
               </h6>
@@ -187,7 +187,7 @@ export const Home = () => {
                 to="/products/Холодные%20роллы"
                 className="products_block mini_block product_blocks_in left-img"
               >
-                <img id="rolls" src={assets.product5} alt="" />
+                <img id="rolls" src={assets.product5} loading="lazy" alt="" />
                 <h6>
                   ХОЛОДНЫЕ
                   <br />
@@ -196,14 +196,14 @@ export const Home = () => {
               </Link>
               <div className="products_blocks_two product_blocks_in">
                 <Link to="/products/Сяке%20маки" className="products_block">
-                  <img id="maki" src={assets.product6} alt="" />
+                  <img id="maki" src={assets.product6} loading="lazy" alt="" />
                   <h6>
                     СЯКИ
                     <br /> МАКИ
                   </h6>
                 </Link>
                 <Link to="/products/WOK" className="products_block">
-                  <img src={assets.product4} alt="" />
+                  <img src={assets.product4} loading="lazy" alt="" />
                   <h6>ВОК</h6>
                 </Link>
               </div>
@@ -216,7 +216,7 @@ export const Home = () => {
                   to="/products/Горячие%20роллы"
                   className="products_block mini_block product_blocks_in"
                 >
-                  <img id="hotMobile" src={assets.product2} alt="" />
+                  <img id="hotMobile" src={assets.product2} loading="lazy" alt="" />
                   <h6>
                     ГОРЯЧИЕ <br />
                     РОЛЛЫ
@@ -224,11 +224,11 @@ export const Home = () => {
                 </Link>
                 <div className="products_blocks_two product_blocks_in">
                   <Link to="/products/Пицца" className="products_block">
-                    <img src={assets.product3} alt="" />
+                    <img src={assets.product3} loading="lazy" alt="" />
                     <h6>ПИЦЦА</h6>
                   </Link>
                   <Link to="/products/Фаст%20Фуд" className="products_block">
-                    <img src={assets.product7} alt="" />
+                    <img src={assets.product7} loading="lazy" alt="" />
                     <h6>
                       ФАСТ
                       <br />
@@ -239,7 +239,7 @@ export const Home = () => {
               </div>
             </div>
             <Link to="/products/Напитки" className="products_block product_one">
-              <img src={assets.product8} alt="" />
+              <img src={assets.product8} loading="lazy" alt="" />
               <h6>НАПИТКИ</h6>
             </Link>
           </div>

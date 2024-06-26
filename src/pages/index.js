@@ -1,4 +1,5 @@
 import "./pages.scss";
+export { Error } from "./Error";
 export { Home } from "./Home";
 export { Products } from "./Products";
 export { Cart } from "./Cart";

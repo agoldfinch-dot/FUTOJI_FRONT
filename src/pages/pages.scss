@@ -457,6 +457,19 @@
     }
   }
 }
+.ErrorPage
+{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("/src/assets/gradient-big.webp");
+  background-size: cover;
+  margin-top: 20vh;
+  min-height: 400px;
+  h2 {
+    text-decoration: underline;
+  }
+}
 .add__cart-btn:disabled {
   cursor: default;
   background: #d9d9d9 !important;

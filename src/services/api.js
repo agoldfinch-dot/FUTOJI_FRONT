@@ -6,6 +6,7 @@ const api = axios.create({
   baseURL: API_URL,
   headers: {
     "Content-Type": "application/json",
+    "Cache-Control": "max-age=300",
   },
   timeout: 10000,
 });

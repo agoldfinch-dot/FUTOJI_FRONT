@@ -1,9 +1,15 @@
 import { getImageUrl } from "../utils/helpers";
+import { useContext } from "react";
+import { BasketContext } from "../context/BasketContext";
 
-export const OrderList = ({ deliveryAddress, endPrice, basket }) => {
-  
+export const OrderList = ({ deliveryAddress, endPrice, basketItem}) => {
+  const { basket } = useContext(BasketContext);
+  console.log(basketItem)
+  if ( basketItem == undefined) {
+    basketItem = Object.assign([], basket);
+  }
   const handleCalculatePrice = () => {
-    return basket.reduce((total, item) => {
+    return basketItem.reduce((total, item) => {
       return total + item.price;
     }, 0);
   };
@@ -15,8 +21,8 @@ export const OrderList = ({ deliveryAddress, endPrice, basket }) => {
       <div className="order_list-content">
         <h1 className="title">СОСТАВ ЗАКАЗА</h1>
         <div className="products_boxes">
-          {basket.length > 0 ? (
-            basket.map((item, index) => (
+          {basketItem.length > 0 ? (
+            basketItem.map((item, index) => (
               <div key={`${item.id}-${index}`} className="product_box">
                 <div className="product_left-box">
                   {item.image ? (

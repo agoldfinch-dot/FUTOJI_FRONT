@@ -21,7 +21,7 @@ export const МadeОrder = () => {
   const storedResponseData = localStorage.getItem("orderData");
   const responseData = JSON.parse(storedResponseData);
   let deliveryAddress = location?.state?.deliveryAddress
-
+  console.log(finalBasket)
   const handleShowOrderList = () => {
     setShowOrderList(!showOrderList);
   };
@@ -40,7 +40,7 @@ export const МadeОrder = () => {
         <button className="blur__btn" onClick={handleShowOrderList}>
           Посмотреть заказ
         </button>
-        {showOrderList && <OrderList deliveryAddress={deliveryAddress} endPrice={responseData?.totalPrice} basket={finalBasket} />}
+        {showOrderList && <OrderList deliveryAddress={deliveryAddress} endPrice={responseData?.totalPrice} basketItem={finalBasket} />}
         <Link className="add__cart-btn" to="/products/Пицца">
           Назад к меню
         </Link>

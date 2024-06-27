@@ -1,12 +1,21 @@
 import { Link, useLocation } from "react-router-dom";
 import assets from "../assets";
 import { OrderList} from "../components";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { BasketContext } from "../context/BasketContext";
 
 
 export const МadeОrder = () => {
   const [showOrderList, setShowOrderList] = useState(false);
   const location = useLocation();
+  const { basket, clearBasket } = useContext(BasketContext);
+
+  if (basket.length > 0) 
+  {
+    localStorage.setItem("finalBasket", JSON.stringify(basket));
+    clearBasket();
+  }
+  const finalBasket = JSON.parse(localStorage.getItem("finalBasket"));
   // const { deliveryAddress } = location.state;
 
   const storedResponseData = localStorage.getItem("orderData");
@@ -31,7 +40,7 @@ export const МadeОrder = () => {
         <button className="blur__btn" onClick={handleShowOrderList}>
           Посмотреть заказ
         </button>
-        {showOrderList && <OrderList deliveryAddress={deliveryAddress} endPrice={responseData?.totalPrice} />}
+        {showOrderList && <OrderList deliveryAddress={deliveryAddress} endPrice={responseData?.totalPrice} basket={finalBasket} />}
         <Link className="add__cart-btn" to="/products/Пицца">
           Назад к меню
         </Link>

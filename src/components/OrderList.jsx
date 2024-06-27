@@ -1,10 +1,7 @@
-import { useContext } from "react";
-import { BasketContext } from "../context/BasketContext";
 import { getImageUrl } from "../utils/helpers";
 
-export const OrderList = ({ deliveryAddress, endPrice }) => {
-  const { basket } = useContext(BasketContext);
-
+export const OrderList = ({ deliveryAddress, endPrice, basket }) => {
+  
   const handleCalculatePrice = () => {
     return basket.reduce((total, item) => {
       return total + item.price;

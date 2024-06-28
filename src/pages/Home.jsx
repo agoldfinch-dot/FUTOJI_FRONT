@@ -64,28 +64,28 @@ export const Home = () => {
             loop={true}
           >
             <SwiperSlide>
-              <img src="/slider/promo.jpg" alt="" />
+              <img src="/slider/promo.jpg" alt="Лакинск Промо" />
             </SwiperSlide>
             <SwiperSlide>
-              <img loading="lazy" src="/slider/1.jpg" />
+              <img loading="lazy" src="/slider/1.jpg" alt="Роллы Лакинск/Собинка Доставка"/>
             </SwiperSlide>
             <SwiperSlide>
-              <img loading="lazy" src="/slider/2.jpg" />
+              <img loading="lazy" src="/slider/2.jpg" alt="Сяки Маки Лакинск/Собинка Доставка" />
             </SwiperSlide>
             <SwiperSlide>
-              <img loading="lazy" src="/slider/3.jpg" />
+              <img loading="lazy" src="/slider/3.jpg" alt="Запечённые Роллы Лакинск/Собинка Доставка" />
             </SwiperSlide>
             <SwiperSlide>
-              <img loading="lazy" src="/slider/4.jpg" />
+              <img loading="lazy" src="/slider/4.jpg" alt="Пицца Лакинск/Собинка Доставка"/>
             </SwiperSlide>
             <SwiperSlide>
-              <img loading="lazy" src="/slider/5.jpg" />
+              <img loading="lazy" src="/slider/5.jpg" alt="Фаст Фуд Лакинск/Собинка Доставка" />
             </SwiperSlide>
             <SwiperSlide>
-              <img loading="lazy" src="/slider/6.jpg" />
+              <img loading="lazy" src="/slider/6.jpg" alt="Еда Лакинск/Собинка Доставка" />
             </SwiperSlide>
             <SwiperSlide>
-              <img loading="lazy" src="/slider/7.jpg" />
+              <img loading="lazy" src="/slider/7.jpg" alt="Напитки сеты Лакинск/Собинка Доставка"/>
             </SwiperSlide>
           </Swiper>
 

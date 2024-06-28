@@ -191,7 +191,7 @@ export const Footer = () => {
         </div>
       </ul>
       <div id="authors">
-        <a href="https://t.me/mil_popusk"><h2 id="design">Дизайн - Иван Комиссаров</h2></a>
+        <h2 id="design">Дизайн - <a href="https://t.me/mil_popusk">Иван Комиссаров</a></h2>
         <h2 id="dev">Разработка - <a href="https://t.me/yuunaass">Антон Линков</a> & <a href="https://t.me/nyanvvv">agoldfinch</a></h2>
       </div>
     </footer>

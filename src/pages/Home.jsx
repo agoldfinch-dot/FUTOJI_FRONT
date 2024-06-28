@@ -64,28 +64,28 @@ export const Home = () => {
             loop={true}
           >
             <SwiperSlide>
-              <img loading="lazy" src="https://sun1-84.userapi.com/impg/9jzc9OCc-48I6OKoxRskOgzzihHUCAfKumrgkw/9g6l1GKlEME.jpg?size=2560x1706&quality=95&sign=7607cff233546fcb4d7c8f67e0aaa538&type=album" alt="" />
+              <img loading="lazy" src="/slider/promo.jpg" alt="" />
             </SwiperSlide>
             <SwiperSlide>
-              <img loading="lazy" src="https://sun1-85.userapi.com/impg/xw-GfqMzPQOuQPqonkY7PR7dwq8lCTik2X5vhw/4dNG9WLlBV4.jpg?size=2560x1809&quality=95&sign=12580b14aa8ae1639ff37142c8792618&type=album" />
+              <img loading="lazy" src="/slider/1.jpg" />
             </SwiperSlide>
             <SwiperSlide>
-              <img loading="lazy" src="https://sun1-24.userapi.com/impg/dpc-0GJ6LBkUJh32aUM9UlqB2julU-nod-tlnQ/P0AgLydZpBk.jpg?size=2560x1810&quality=95&sign=bd12c99ad730ae7a32ff21513c4a3d39&type=album" />
+              <img loading="lazy" src="/slider/2.jpg" />
             </SwiperSlide>
             <SwiperSlide>
-              <img loading="lazy" src="https://sun1-89.userapi.com/impg/ZB5i7RydvYpOvygIBZNAtjQ5mxUKewilFMejTQ/WIDq32o2FtA.jpg?size=2560x1810&quality=95&sign=7b82d66fad92adbd5f9f5e76ca8a9fec&type=album" />
+              <img loading="lazy" src="/slider/3.jpg" />
             </SwiperSlide>
             <SwiperSlide>
-              <img loading="lazy" src="https://sun1-54.userapi.com/impg/2pxCw3n23hneC1rE56fnFksLztNZmjXSnVSODQ/yeG1JvBl6sQ.jpg?size=2560x1809&quality=95&sign=7f917e8d69cce7c3ebb365281a59953e&type=album" />
+              <img loading="lazy" src="/slider/4.jpg" />
             </SwiperSlide>
             <SwiperSlide>
-              <img loading="lazy" src="https://sun1-93.userapi.com/impg/UAPuQJ58EVqz3PY_fAea2ZQy6YKxakK8-9lpbg/2qhz4iqjyVY.jpg?size=2560x1810&quality=95&sign=f03f22a7d6956664a9fa8fec44bd1364&type=album" />
+              <img loading="lazy" src="/slider/5.jpg" />
             </SwiperSlide>
             <SwiperSlide>
-              <img loading="lazy" src="https://sun1-55.userapi.com/impg/J-20r3smbCjDQd0FmjVak7Dib_qSyebUpcRZBw/tzbT6Dg6DIM.jpg?size=2560x1810&quality=95&sign=7a7090090631000223b1823ce3f5b696&type=album" />
+              <img loading="lazy" src="/slider/6.jpg" />
             </SwiperSlide>
             <SwiperSlide>
-              <img loading="lazy" src="https://sun1-91.userapi.com/impg/kFhXwzZJPTINDb7nVkwOnABIgaNxidTPx9Z7NA/Unlc_PpRRvQ.jpg?size=2560x1809&quality=95&sign=f455d249ab26b33cdb2bd4b6d81a691f&type=album" />
+              <img loading="lazy" src="/slider/7.jpg" />
             </SwiperSlide>
           </Swiper>
 

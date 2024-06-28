@@ -64,7 +64,7 @@ export const Home = () => {
             loop={true}
           >
             <SwiperSlide>
-              <img loading="lazy" src="/slider/promo.jpg" alt="" />
+              <img src="/slider/promo.jpg" alt="" />
             </SwiperSlide>
             <SwiperSlide>
               <img loading="lazy" src="/slider/1.jpg" />

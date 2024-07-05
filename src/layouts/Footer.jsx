@@ -20,7 +20,7 @@ export const Footer = () => {
         <div className="footer_top">
           <div className="footer_logo_block">
             <a className="footer_logo" href="/">
-              <img src={assets.footerLogoDesktop} alt="" />
+              <img src={assets.footerLogoDesktop} loading="lazy" alt="Футоджи лакинск доставка еды" />
             </a>
             <div className="footer_about">
               <h6>О нас</h6>
@@ -66,17 +66,17 @@ export const Footer = () => {
             <ul className="social_media">
               <li>
                 <a href="https://yandex.ru/maps/org/futodzhi/108652319254/">
-                  <img src={assets.mapIcon} alt="" />
+                  <img src={assets.mapIcon} loading="lazy" alt="карты яндекс футоджи лакинск" />
                 </a>
               </li>
               <li>
                 <a href="https://t.me/FutojiBot">
-                  <img src={assets.telegramIcon} alt="" />
+                  <img src={assets.telegramIcon} loading="lazy" alt="футоджи бот телеграмм" />
                 </a>
               </li>
               <li>
                 <a href="https://vk.com/futoji33">
-                  <img src={assets.vkIcon} alt="" />
+                  <img src={assets.vkIcon} loading="lazy" alt="футоджи группа вк vk" />
                 </a>
               </li>
             </ul>
@@ -87,7 +87,7 @@ export const Footer = () => {
         </a>
         <div className="footer_media">
           <a className="footer_media_logo" href="/">
-            <img src={assets.footerMediaLogo} alt="" />
+            <img src={assets.footerMediaLogo} alt="футоджи лакинск доставка еды" />
           </a>
           <div className="footer_media_block">
             <p>
@@ -97,17 +97,17 @@ export const Footer = () => {
             <ul className="social_media">
               <li>
                 <a href="https://yandex.ru/maps/org/futodzhi/108652319254/">
-                  <img src={assets.mapIcon} alt="" />
+                  <img src={assets.mapIcon} loading="lazy" alt="футоджи яндекс карты" />
                 </a>
               </li>
               <li>
                 <a href="https://t.me/FutojiBot">
-                  <img src={assets.telegramIcon} alt="" />
+                  <img src={assets.telegramIcon} loading="lazy" alt="футоджи телеграмм" />
                 </a>
               </li>
               <li>
                 <a href="https://vk.com/futoji33">
-                  <img src={assets.vkIcon} alt="" />
+                  <img src={assets.vkIcon} loading="lazy" alt="футоджи вк" />
                 </a>
               </li>
             </ul>
@@ -118,9 +118,10 @@ export const Footer = () => {
           >
             <span>Информация</span>
             <img
+              loading="lazy"
               className={`${visibility.element1 ? "active" : ""}`}
               src={assets.downIcon}
-              alt=""
+              alt="Информация о Футоджи лакинск доставка"
             />
           </button>
           <div
@@ -142,7 +143,8 @@ export const Footer = () => {
             <img
               className={`${visibility.element2 ? "active" : ""}`}
               src={assets.downIcon}
-              alt=""
+              loading="lazy"
+              alt="Информация футоджи лакинск доставка"
             />
           </button>
           <ul
@@ -169,22 +171,22 @@ export const Footer = () => {
         <div className="footer_container">
           <li>
             <a>
-              <img src={assets.footerLogo1} alt="" />
+              <img src={assets.footerLogo1} loading="lazy" alt="оплата картой" />
             </a>
           </li>
           <li>
             <a>
-              <img src={assets.footerLogo2} alt="" />
+              <img src={assets.footerLogo2} loading="lazy" alt="оплата картой" />
             </a>
           </li>
           <li>
             <a>
-              <img src={assets.footerLogo3} alt="" />
+              <img src={assets.footerLogo3} loading="lazy" alt="оплата картой" />
             </a>
           </li>
           <li>
             <a>
-              <img src={assets.footerLogo4} alt="" />
+              <img src={assets.footerLogo4} loading="lazy" alt="оплата картой" />
             </a>
           </li>
         

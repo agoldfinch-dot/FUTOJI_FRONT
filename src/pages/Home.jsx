@@ -64,7 +64,10 @@ export const Home = () => {
             loop={true}
           >
             <SwiperSlide>
-              <img src="/slider/promo.jpg" alt="Лакинск Промо" />
+              <img src="/slider/promo.webp" alt="Лакинск Сеты с Доставкой" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="/slider/promo2.webp" alt="Лакинск Отзыв Подарок Розыгрыш" />
             </SwiperSlide>
             <SwiperSlide>
               <img loading="lazy" src="/slider/1.jpg" alt="Роллы Лакинск/Собинка Доставка"/>

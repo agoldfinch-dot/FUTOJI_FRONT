@@ -639,7 +639,7 @@ export const MakingOrder = () => {
     // Change the address and isPickup fields based on the delivery method
     const fullAddress =
       deliveryMethod === "delivery"
-        ? `${address}, дом ${house}, квартира/офис ${kvartira}${etaj !== "" ? `, этаж ${etaj}`: ""}`
+        ? `${address}, д. ${house}, кв. ${kvartira}${etaj !== "" ? `, этаж ${etaj}`: ""}`
         : null;
 
     const orderData = {

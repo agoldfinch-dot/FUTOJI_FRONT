@@ -495,8 +495,8 @@ const isValidPhoneNumber = (phoneNumber) =>
 const isValidUserName = (userName) => userName && userName.length > 0;
 
 // Yetkazib berish uchun manzil tekshirilishi
-const isValidAddress = (deliveryMethod, address, house, kvartira) =>
-  deliveryMethod !== "delivery" || (address && house && kvartira);
+const isValidAddress = (deliveryMethod, city, street, house, kvartira) =>
+  deliveryMethod !== "delivery" || (city && street && house && kvartira);
 
 // Yetkazib berish vaqti tekshirilishi
 const isValidDeliveryTime = (deliveryTime, selectedOption, options) =>
@@ -509,20 +509,21 @@ const convertTimeRangeToTime = (timeRange) => {
 };
 
 export const MakingOrder = () => {
+  const deliveryStoraged = JSON.parse(localStorage.getItem("deliveryStorage"));
   // Komponentdagi holatlar va ma'lumotlar
-  const [deliveryMethod, setDeliveryMethod] = useState("");
-  const [deliveryTime, setDeliveryTime] = useState("");
-  const [paymentMethod, setPaymentMethod] = useState("");
+  const [deliveryMethod, setDeliveryMethod] = useState("delivery");
+  const [deliveryTime, setDeliveryTime] = useState("delivery2");
+  const [paymentMethod, setPaymentMethod] = useState("card");
   const [noChange, setNoChange] = useState(false);
   const [showOrderList, setShowOrderList] = useState(true);
-  const [phoneNumber, setPhoneNumber] = useState("");
-  const [userName, setUserName] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState(deliveryStoraged?.phoneNumber ?? "");
+  const [userName, setUserName] = useState(deliveryStoraged?.userName ?? "");
   const [address, setAddress] = useState("");
-  const [city, setCity] = useState("");
-  const [street, setStreet] = useState("");
-  const [house, setHouse] = useState("");
-  const [kvartira, setKvartira] = useState("");
-  const [etaj, setEtaj] = useState("");
+  const [city, setCity] = useState( deliveryStoraged?.city ?? "");
+  const [street, setStreet] = useState(deliveryStoraged?.street ?? "");
+  const [house, setHouse] = useState(deliveryStoraged?.house ?? "");
+  const [kvartira, setKvartira] = useState(deliveryStoraged?.kvartira ?? "");
+  const [etaj, setEtaj] = useState(deliveryStoraged?.etaj ?? "");
   const [comment, setComment] = useState("");
   const [promoCode, setPromoCode] = useState("");
   const [changeAmount, setChangeAmount] = useState("");
@@ -591,9 +592,10 @@ export const MakingOrder = () => {
       document.querySelector("input[name='name']").focus();
       return false;
     }
-    if (!isValidAddress(deliveryMethod, address, house, kvartira)) {
+    if (!isValidAddress(deliveryMethod, city, street, house, kvartira)) {
       toast.error("Пожалуйста, введите полный адрес.");
-      if (!address) document.querySelector("input[name='address']").focus();
+      if (!city ) document.querySelector(".city").focus();
+      else if (!street) document.querySelector(".street").focus();
       else if (!house) document.querySelector(".house").focus();
       else if (!kvartira) document.querySelector(".kvartira").focus();
       return false;
@@ -639,7 +641,7 @@ export const MakingOrder = () => {
     // Change the address and isPickup fields based on the delivery method
     const fullAddress =
       deliveryMethod === "delivery"
-        ? `${address}, д. ${house}, кв. ${kvartira}${etaj !== "" ? `, этаж ${etaj}`: ""}`
+        ? `${city}, ул. ${street}, д. ${house}, кв. ${kvartira}${etaj !== "" ? `, этаж ${etaj}`: ""}`
         : null;
 
     const orderData = {
@@ -683,7 +685,11 @@ export const MakingOrder = () => {
         const responseData = await response.json();
         console.log("Order successfully created:", responseData);
         toast.success("Заказ успешно создан!");
-
+        const deliveryStorage = {
+          phoneNumber, userName, city, street, house, kvartira, etaj
+        }
+        
+        localStorage.setItem("deliveryStorage", JSON.stringify(deliveryStorage));
         localStorage.setItem("orderData", JSON.stringify(responseData));
         navigate("/made-order", {
           state: { deliveryAddress: fullAddress },
@@ -756,20 +762,18 @@ export const MakingOrder = () => {
                             type="text"
                             name="address"
                             className="full"
-                            value={address}
+                            value={city}
                             onChange={(e) => {
-                              setCity(e.target.value)
-                              setAddress(`${e.target.value} ${street}`)}}
+                              setCity(e.target.value)}}
                           />
                           <FormItem
                             label="Улица:"
                             type="text"
                             name="address"
                             className="full"
-                            value={address}
+                            value={street}
                             onChange={(e) => {
-                              setStreet(e.target.value)
-                              setAddress(`${city} ${e.target.value}`)}}
+                              setStreet(e.target.value)}}
                           />
                           <FormSection className="flex_box full">
                             <FormItem
@@ -945,7 +949,7 @@ export const MakingOrder = () => {
                 <OrderList
                   deliveryAddress={
                     deliveryMethod === "delivery"
-                      ? `${address}, дом ${house}, квартира/офис ${kvartira}${etaj !== "" ? `, этаж ${etaj}`: ""}`
+                      ? `${city}, ул. ${street}, дом ${house}, квартира/офис ${kvartira}${etaj !== "" ? `, этаж ${etaj}`: ""}`
                       : "г. Лакинск, ул. Парижская Коммуны, д. 24"
                   }
                 />
@@ -956,7 +960,7 @@ export const MakingOrder = () => {
                 <OrderList
                   deliveryAddress={
                     deliveryMethod === "delivery"
-                      ? `${address}, дом ${house}, квартира/офис ${kvartira}${etaj !== "" ? `, этаж ${etaj}`: ""}`
+                      ? `${city}, ул. ${street}, дом ${house}, квартира/офис ${kvartira}${etaj !== "" ? `, этаж ${etaj}`: ""}`
                       : "г. Лакинск, ул. Парижская Коммуны, д. 24"
                   }
                 />

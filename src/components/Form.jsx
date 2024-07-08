@@ -39,6 +39,7 @@ export const FormItem = ({
   className,
   placeholder,
   onChange,
+  value
 }) => (
   <>
     <div className={`form_item ${className ? className : ""}`}>
@@ -47,6 +48,7 @@ export const FormItem = ({
         className={`form_input ${className ? className : ""}`}
         type={type}
         name={name}
+        value={value}
         placeholder={placeholder}
         onChange={onChange}
       />

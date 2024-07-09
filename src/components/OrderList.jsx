@@ -4,7 +4,6 @@ import { BasketContext } from "../context/BasketContext";
 
 export const OrderList = ({ deliveryAddress, endPrice, basketItem}) => {
   const { basket } = useContext(BasketContext);
-  console.log(basketItem)
   if ( basketItem == undefined) {
     basketItem = Object.assign([], basket);
   }

@@ -21,7 +21,6 @@ export const МadeОrder = () => {
   const storedResponseData = localStorage.getItem("orderData");
   const responseData = JSON.parse(storedResponseData);
   let deliveryAddress = location?.state?.deliveryAddress
-  console.log(finalBasket)
   const handleShowOrderList = () => {
     setShowOrderList(!showOrderList);
   };
@@ -37,6 +36,9 @@ export const МadeОrder = () => {
         <img src={assets.topGradient} alt="" />
       </div>
       <div className="btns">
+              <a href="https://yandex.ru/maps/org/futodzhi/108652319254/">
+              <img src="/slider/promo2.webp" alt="Лакинск Отзыв Подарок Розыгрыш" />
+              </a>
         <button className="blur__btn" onClick={handleShowOrderList}>
           Посмотреть заказ
         </button>

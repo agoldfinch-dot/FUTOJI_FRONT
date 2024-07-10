@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import "swiper/css";
-import { Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import assets from "../assets";
 import { Link, useHref } from "react-router-dom";
 
@@ -52,7 +52,7 @@ export const Home = () => {
           <Swiper
             ref={swiperRef}
             className="homeSwiper"
-            modules={[Navigation, Pagination]}
+            modules={[Navigation, Pagination, Autoplay]}
             navigation={{
               prevEl: ".home-button-prev",
               nextEl: ".home-button-next",
@@ -62,37 +62,20 @@ export const Home = () => {
             slidesPerView={1}
             centeredSlides={true}
             loop={true}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: true,
+            }}
           >
             <SwiperSlide>
-              <a href="https://vk.com/futoji33">
-              <img src="/slider/promo.webp" alt="Лакинск Сеты с Доставкой" />
+              <a href="https://vk.com/wall-208247320_649">
+              <img src="/slider/hours.webp" alt="Лакинск Доставка еды" />
               </a>
             </SwiperSlide>
             <SwiperSlide>
               <a href="https://yandex.ru/maps/org/futodzhi/108652319254/">
               <img src="/slider/promo2.webp" alt="Лакинск Отзыв Подарок Розыгрыш" />
               </a>
-            </SwiperSlide>
-            <SwiperSlide>
-              <img loading="lazy" src="/slider/1.jpg" alt="Роллы Лакинск/Собинка Доставка"/>
-            </SwiperSlide>
-            <SwiperSlide>
-              <img loading="lazy" src="/slider/2.jpg" alt="Сяки Маки Лакинск/Собинка Доставка" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img loading="lazy" src="/slider/3.jpg" alt="Запечённые Роллы Лакинск/Собинка Доставка" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img loading="lazy" src="/slider/4.jpg" alt="Пицца Лакинск/Собинка Доставка"/>
-            </SwiperSlide>
-            <SwiperSlide>
-              <img loading="lazy" src="/slider/5.jpg" alt="Фаст Фуд Лакинск/Собинка Доставка" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img loading="lazy" src="/slider/6.jpg" alt="Еда Лакинск/Собинка Доставка" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img loading="lazy" src="/slider/7.jpg" alt="Напитки сеты Лакинск/Собинка Доставка"/>
             </SwiperSlide>
           </Swiper>
 

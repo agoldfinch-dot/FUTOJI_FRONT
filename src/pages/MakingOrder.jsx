@@ -696,7 +696,8 @@ export const MakingOrder = () => {
         });
       } else {
         const errorData = await response.json();
-        toast.error(errorData?.detail?.error?.message);
+        console.log(errorData?.detail?.error?.details?.includes('Не указан адрес доставки'))
+        if (errorData?.detail?.error?.details?.includes('Не указан адрес доставки')) toast.error("Неправильно указан адрес доставки (Попробуйте указать ПОЛНОЕ название улицы)     \"21 п/съезд\" -> 21 партсъездА");
       }
     } catch (error) {
       toast.error("Сетевая ошибка. Попробуйте еще раз.");

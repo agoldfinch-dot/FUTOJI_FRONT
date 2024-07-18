@@ -46,7 +46,7 @@ export const ProductCard = ({ selectedCategory, product }) => {
                 <div onClick={() => handleProductClick(item)}>
                   <div className="product_img" >
                     {item.image ? (
-                      <img src={getImageUrl(item.image)} loading="lazy" alt={item.name} />
+                      <img src={getImageUrl(item.image)}  decoding="async" loading="lazy" alt={item.name} />
                     ) : (
                       <span className="no_img">Нет изображения</span>
                     )}
@@ -99,7 +99,7 @@ export const ProductCard = ({ selectedCategory, product }) => {
           <div>
             {product.image && (
               <div className="product_img" onClick={() => handleProductClick(product)}>
-                <img src={getImageUrl(product.image)} alt={product.name} />
+                <img src={getImageUrl(product.image)} decoding="async" loading="lazy" alt={product.name} />
               </div>
             )}
             <h4 className="product_name">{product.name}</h4>

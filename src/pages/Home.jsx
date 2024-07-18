@@ -68,13 +68,16 @@ export const Home = () => {
             }}
           >
             <SwiperSlide>
+              <img src="/slider/hb.webp" decoding="async" alt="Лакинск/Собинка Доставка день рождения скидки" />
+            </SwiperSlide>
+            <SwiperSlide>
               <a href="https://vk.com/wall-208247320_649">
-              <img src="/slider/hours.webp" alt="Лакинск Доставка еды" />
+              <img src="/slider/hours.webp" decoding="async" alt="Лакинск Быстра Доставка еды" />
               </a>
             </SwiperSlide>
             <SwiperSlide>
               <a href="https://yandex.ru/maps/org/futodzhi/108652319254/">
-              <img src="/slider/promo2.webp" alt="Лакинск Отзыв Подарок Розыгрыш" />
+              <img src="/slider/promo2.webp" decoding="async" alt="Лакинск Отзыв Подарок Розыгрыш" />
               </a>
             </SwiperSlide>
           </Swiper>
@@ -101,7 +104,7 @@ export const Home = () => {
         <div className="products_in desktop_block">
           <div className="products_left">
             <Link to="/products/Сеты%20и%20наборы" className="products_block product_one">
-              <img src={assets.product1} id="sets" loading="lazy" alt="" />
+              <img src={assets.product1} id="sets" decoding="async" loading="lazy" alt="Сеты Суши Лакинск" />
               <h6>СЕТЫ</h6>
             </Link>
             <div className="products_blocks">
@@ -109,7 +112,7 @@ export const Home = () => {
                 to="/products/Горячие%20роллы"
                 className="products_block mini_block product_blocks_in"
               >
-                <img src={assets.product2} loading="lazy" alt="" />
+                <img src={assets.product2} decoding="async" loading="lazy" alt="Роллы Лакинск/Собинка" />
                 <h6>
                   ГОРЯЧИЕ
                   <br /> РОЛЛЫ
@@ -117,11 +120,11 @@ export const Home = () => {
               </Link>
               <div className="products_blocks_two product_blocks_in">
                 <Link to="/products/Пицца" className="products_block">
-                  <img src={assets.product3} loading="lazy" alt="" />
+                  <img src={assets.product3} decoding="async" loading="lazy" alt="Пицца Лакинск/Собинка" />
                   <h6>ПИЦЦА</h6>
                 </Link>
                 <Link to="/products/WOK" className="products_block">
-                  <img src={assets.product4} loading="lazy" alt="" />
+                  <img src={assets.product4} decoding="async" loading="lazy" alt="Вок Лакинск/Собинка" />
                   <h6>ВОК</h6>
                 </Link>
               </div>
@@ -130,19 +133,19 @@ export const Home = () => {
           <div className="products_right">
             <div className="products_blocks">
               <Link to="/products/Холодные%20роллы" className="products_block product_blocks_in">
-                <img id="rolls" src={assets.product5} loading="lazy" alt="" />
+                <img id="rolls" decoding="async" src={assets.product5} loading="lazy" alt="Роллы Лакинск/Собинка" />
                 <h6>ХОЛОДНЫЕ РОЛЛЫ</h6>
               </Link>
               <div className="products_blocks_two product_blocks_in">
                 <Link to="/products/Сяке%20маки" className="products_block mini_block">
-                  <img src={assets.product6} loading="lazy" alt="" />
+                  <img src={assets.product6} decoding="async" loading="lazy" alt="Сяки Маки Лакинск/Собинка" />
                   <h6>
                     СЯКИ
                     <br /> МАКИ
                   </h6>
                 </Link>
                 <Link to="/products/Фаст%20Фуд" className="products_block mini_block">
-                  <img src={assets.product7} loading="lazy" alt="" />
+                  <img src={assets.product7} decoding="async" loading="lazy" alt="Фаст фуд Лакинск/Собинка" />
                   <h6>
                     ФАСТ
                     <br />
@@ -152,7 +155,7 @@ export const Home = () => {
               </div>
             </div>
             <Link to="/products/Напитки" className="products_block product_one">
-              <img src={assets.product8} loading="lazy" alt="" />
+              <img src={assets.product8} decoding="async" loading="lazy" alt="Напитки Лакинск/Собинка" />
               <h6>НАПИТКИ</h6>
             </Link>
           </div>
@@ -172,7 +175,7 @@ export const Home = () => {
                 to="/products/Холодные%20роллы"
                 className="products_block mini_block product_blocks_in left-img"
               >
-                <img id="rolls" src={assets.product5} loading="lazy" alt="" />
+                <img id="rolls" decoding="async" src={assets.product5} loading="lazy" alt="" />
                 <h6>
                   ХОЛОДНЫЕ
                   <br />
@@ -181,14 +184,14 @@ export const Home = () => {
               </Link>
               <div className="products_blocks_two product_blocks_in">
                 <Link to="/products/Сяке%20маки" className="products_block">
-                  <img id="maki" src={assets.product6} loading="lazy" alt="" />
+                  <img id="maki"  decoding="async" src={assets.product6} loading="lazy" alt="" />
                   <h6>
                     СЯКИ
                     <br /> МАКИ
                   </h6>
                 </Link>
                 <Link to="/products/WOK" className="products_block">
-                  <img src={assets.product4} loading="lazy" alt="" />
+                  <img src={assets.product4}  decoding="async" loading="lazy" alt="" />
                   <h6>ВОК</h6>
                 </Link>
               </div>
@@ -201,7 +204,7 @@ export const Home = () => {
                   to="/products/Горячие%20роллы"
                   className="products_block mini_block product_blocks_in"
                 >
-                  <img id="hotMobile" src={assets.product2} loading="lazy" alt="" />
+                  <img id="hotMobile"  decoding="async" src={assets.product2} loading="lazy" alt="" />
                   <h6>
                     ГОРЯЧИЕ <br />
                     РОЛЛЫ
@@ -209,11 +212,11 @@ export const Home = () => {
                 </Link>
                 <div className="products_blocks_two product_blocks_in">
                   <Link to="/products/Пицца" className="products_block">
-                    <img src={assets.product3} loading="lazy" alt="" />
+                    <img src={assets.product3}  decoding="async" loading="lazy" alt="" />
                     <h6>ПИЦЦА</h6>
                   </Link>
                   <Link to="/products/Фаст%20Фуд" className="products_block">
-                    <img src={assets.product7} loading="lazy" alt="" />
+                    <img src={assets.product7}  decoding="async" loading="lazy" alt="" />
                     <h6>
                       ФАСТ
                       <br />
@@ -224,7 +227,7 @@ export const Home = () => {
               </div>
             </div>
             <Link to="/products/Напитки" className="products_block product_one">
-              <img src={assets.product8} loading="lazy" alt="" />
+              <img src={assets.product8}  decoding="async" loading="lazy" alt="" />
               <h6>НАПИТКИ</h6>
             </Link>
           </div>

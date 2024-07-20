@@ -36,9 +36,10 @@ export const МadeОrder = () => {
         <img src={assets.topGradient} alt="" />
       </div>
       <div className="btns">
-              <a href="https://yandex.ru/maps/org/futodzhi/108652319254/">
-              <img src="/slider/promo2.webp" alt="Лакинск Отзыв Подарок Розыгрыш" />
-              </a>
+        <h3>ЗАКАЗЫ ОБРАБАТЫВАЮТСЯ АВТОМАТИЧЕСКИ!!!<br/>НЕ ОЖИДАЙТЕ ЗВОНКА ОПЕРАТОРА</h3>
+        <a href="https://yandex.ru/maps/org/futodzhi/108652319254/">
+        <img src="/slider/promo2.webp" alt="Лакинск Отзыв Подарок Розыгрыш" />
+        </a>
         <button className="blur__btn" onClick={handleShowOrderList}>
           Посмотреть заказ
         </button>

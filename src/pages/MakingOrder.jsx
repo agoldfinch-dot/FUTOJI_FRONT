@@ -468,6 +468,7 @@
 // };
 
 import React, { useState, useContext } from "react";
+import { YMaps, Map, SearchControl, GeolocationControl, Placemark } from '@pbe/react-yandex-maps';
 import assets from "../assets";
 import { OrderList } from "../components";
 import {
@@ -486,6 +487,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { BasketContext } from "../context/BasketContext";
 import { useLocation, useNavigate } from "react-router-dom";
+import { YandexMap } from "../components/map";
 
 // Telefon raqamining tekshirilishi
 const isValidPhoneNumber = (phoneNumber) =>
@@ -511,6 +513,7 @@ const convertTimeRangeToTime = (timeRange) => {
 export const MakingOrder = () => {
   const deliveryStoraged = JSON.parse(localStorage.getItem("deliveryStorage"));
   // Komponentdagi holatlar va ma'lumotlar
+  const [coords, setCoords] = useState();
   const [deliveryMethod, setDeliveryMethod] = useState("delivery");
   const [deliveryTime, setDeliveryTime] = useState("delivery2");
   const [paymentMethod, setPaymentMethod] = useState("card");
@@ -580,6 +583,32 @@ export const MakingOrder = () => {
     setShowOrderList(!showOrderList);
   };
 
+  const handleCoordsChange = async (coords) => {
+    console.log(coords)
+    const url = "http://suggestions.dadata.ru/suggestions/api/4_1/rs/geolocate/address";
+    const token = "f262a033ac6cb61849f6cbc967f2ebde4021020e";
+    const query = { lat: coords[0], lon: coords[1], count: 1};
+
+    const options = {
+        method: "POST",
+        mode: "cors",
+        headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+            "Authorization": "Token " + token
+        },
+        body: JSON.stringify(query)
+    }
+
+    const response = await fetch(url, options);
+    const json = await response.json();
+    const data = json.suggestions[0].data
+    console.log(data)
+    setCity(data['city'] ?? data['settlement'] ?? "")
+    setStreet(data['street'] ?? "")
+    setHouse(data['house'] ?? "")
+  }
+
   // Ma'lumotlarni tekshirish
   const handleValidation = () => {
     if (!isValidPhoneNumber(phoneNumber)) {
@@ -593,11 +622,27 @@ export const MakingOrder = () => {
       return false;
     }
     if (!isValidAddress(deliveryMethod, city, street, house, kvartira)) {
-      toast.error("Пожалуйста, введите полный адрес.");
-      if (!city ) document.querySelector(".city").focus();
-      else if (!street) document.querySelector(".street").focus();
-      else if (!house) document.querySelector(".house").focus();
-      else if (!kvartira) document.querySelector(".kvartira").focus();
+      
+      if (!city)
+      {
+        toast.error("Пожалуйста введите город!");
+        document.querySelector(".city").focus()
+      }
+      else if (!street)
+      {
+        toast.error("Пожалуйста введите улицу!");
+        document.querySelector(".street").focus();
+      }
+      else if (!house)
+      {
+        toast.error("Пожалуйста введите номер дома!");
+        document.querySelector(".house").focus();
+      }
+      else if (!kvartira) 
+      {
+        toast.error("Пожалуйста введите номер квартиры!");
+        document.querySelector(".kvartira").focus();
+      }
       return false;
     }
     if (!isValidDeliveryTime(deliveryTime, selectedOption, options)) {
@@ -757,7 +802,15 @@ export const MakingOrder = () => {
                         onChange={() => setDeliveryMethod("pickup")}
                       />
                       {deliveryMethod === "delivery" && (
+        
                         <div className="top_child-form">
+                          <YMaps query={{apikey: "eb7cd4e0-a9a5-4dfb-b5ca-2dcec5a4bc66"}}>
+                            <Map defaultState={{ center: [56.019869, 39.959065], zoom: 15}} onClick={(event) => setCoords(event.get("coords"))}>
+                                <SearchControl options={{ float: "right" }} query={{apikey:"ba872446-0f2a-49c7-bcb4-f4df43efeded"}} onResultSelect={(event) => event.get("target").getResult(event.get("index")).then(e => setCoords(e.geometry._coordinates))} />
+                                <GeolocationControl options={{ float: "left" }} onLocationChange={e => handleCoordsChange(e.get('position'))} />
+                                <Placemark options={{ draggable: true}} geometry={coords} onGeometryChange={e => handleCoordsChange(e.originalEvent.originalEvent.originalEvent.newCoordinates)}></Placemark>
+                            </Map>
+                          </YMaps>
                           <FormItem
                             label="Населенный пункт"
                             type="text"

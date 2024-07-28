@@ -487,8 +487,6 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { BasketContext } from "../context/BasketContext";
 import { useLocation, useNavigate } from "react-router-dom";
-import { YandexMap } from "../components/map";
-
 // Telefon raqamining tekshirilishi
 const isValidPhoneNumber = (phoneNumber) =>
   phoneNumber && phoneNumber.length > 0;

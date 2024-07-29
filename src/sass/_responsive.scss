@@ -73,7 +73,10 @@
   }
 }
 @media only screen and (max-width: 993px) {
-  
+  .yaMap
+  {
+    width: 100%;
+  }
   header {
     .header_burger {
       display: block;
@@ -561,6 +564,7 @@
   .making_order .add__cart-btn {
     width: 100%;
   }
+
   .making_order .form {
     width: 100%;
     row-gap: 25px;

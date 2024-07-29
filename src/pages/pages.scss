@@ -1,4 +1,10 @@
 // home
+.yaMap
+{
+  min-height: 30vh;
+  width: 100%;
+  text-align: center;
+}
 .home {
   margin: 100px 0 74px 0;
   position: relative;
@@ -320,6 +326,7 @@
       text-align: center;
     }
   }
+
   .backet_products {
     display: flex;
     flex-direction: column;

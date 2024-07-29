@@ -245,8 +245,18 @@ header {
 }
 // header
 
+.footerCategories
+  {
+    background-color: #fc3f1d;
+    ul {
+      li{
+        font-size: 0%;
+      }
+    }
+  }
 // footer
 footer {
+  
   #authors
   {
     background-color: rgb(16, 16, 16);

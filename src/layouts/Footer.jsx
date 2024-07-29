@@ -167,7 +167,71 @@ export const Footer = () => {
           </a>
         </div>
       </div>
+      <div className="footerCategories">
+          <ul itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="/" title="Главная" itemprop="item">
+                    <span itemprop="name">Главная</span>
+                    <meta itemprop="position" content="0"/>
+                </a></li>
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="/products/%D0%9F%D0%BE%D0%BF%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D0%BE%D0%B5" title="Популярное" itemprop="item">
+                    <span itemprop="name">Популярное</span>
+                    <meta itemprop="position" content="1"/>
+                </a>
+            </li>
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <a href="/products/%D0%9F%D0%B8%D1%86%D1%86%D0%B0" title="Пицца" itemprop="item">
+                  <span itemprop="name">Пицца</span>
+                  <meta itemprop="position" content="1"/>
+              </a>
+            </li>
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <a href="/products/WOK" title="Вок" itemprop="item">
+                  <span itemprop="name">Вок</span>
+                  <meta itemprop="position" content="1"/>
+              </a>
+            </li>
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <a href="/products/Фаст%20Фуд" title="Фаст Фуд" itemprop="item">
+                  <span itemprop="name">Фаст Фуд</span>
+                  <meta itemprop="position" content="1"/>
+              </a>
+            </li>
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <a href="/products/%D0%A1%D0%B5%D1%82%D1%8B%20%D0%B8%20%D0%BD%D0%B0%D0%B1%D0%BE%D1%80%D1%8B" title="Сеты и наборы" itemprop="item">
+                  <span itemprop="name">Сеты и наборы</span>
+                  <meta itemprop="position" content="1"/>
+              </a>
+            </li>
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <a href="/products/%D0%A5%D0%BE%D0%BB%D0%BE%D0%B4%D0%BD%D1%8B%D0%B5%20%D1%80%D0%BE%D0%BB%D0%BB%D1%8B" title="Холодные роллы" itemprop="item">
+                  <span itemprop="name">Холодные роллы</span>
+                  <meta itemprop="position" content="1"/>
+              </a>
+            </li>
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <a href="/products/Горячие%20роллы" title="Горячие роллы" itemprop="item">
+                  <span itemprop="name">Горячие роллы</span>
+                  <meta itemprop="position" content="1"/>
+              </a>
+            </li>
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <a href="/products/%D0%A1%D1%8F%D0%BA%D0%B5%20%D0%BC%D0%B0%D0%BA%D0%B8" title="Сяки маки" itemprop="item">
+                  <span itemprop="name">Сяки маки</span>
+                  <meta itemprop="position" content="1"/>
+              </a>
+            </li>
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <a href="/products/%D0%9D%D0%B0%D0%BF%D0%B8%D1%82%D0%BA%D0%B8" title="Напитки" itemprop="item">
+                  <span itemprop="name">Напитки</span>
+                  <meta itemprop="position" content="1"/>
+              </a>
+            </li>
+          </ul>
+        </div>
       <ul className="footer_bottom">
+      
         <div className="footer_container">
           <li>
             <a>

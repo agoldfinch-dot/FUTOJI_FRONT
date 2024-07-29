@@ -75,21 +75,21 @@ export const MakingOrder = () => {
     setChangeAmount2(amount);
   };
 
-  useEffect(() => {
-    const fetchCoords = async () => {
-      if (!city || !street || !house) return;
-      const request = ["Собинский", "район", city, street, "д", house].join("+")
-      const url = `https://geocode-maps.yandex.ru/1.x/?apikey=eb7cd4e0-a9a5-4dfb-b5ca-2dcec5a4bc66&geocode=${request}&format=json`
-      const response = await fetch(url)
-      const json = await response.json()
-      const coords = json?.response?.GeoObjectCollection?.featureMember[0]?.GeoObject?.Point?.pos.split(" ").reverse()
-      setCoords(coords)
+  // useEffect(() => {
+  //   const fetchCoords = async () => {
+  //     if (!city || !street || !house) return;
+  //     const request = ["Собинский", "район", city, street, "д", house].join("+")
+  //     const url = `https://geocode-maps.yandex.ru/1.x/?apikey=eb7cd4e0-a9a5-4dfb-b5ca-2dcec5a4bc66&geocode=${request}&format=json`
+  //     const response = await fetch(url)
+  //     const json = await response.json()
+  //     const coords = json?.response?.GeoObjectCollection?.featureMember[0]?.GeoObject?.Point?.pos.split(" ").reverse()
+  //     setCoords(coords)
 
-    }
-      const debounceFetch = setTimeout(fetchCoords, 1000);
+  //   }
+  //     const debounceFetch = setTimeout(fetchCoords, 1000);
 
-      return () => clearTimeout(debounceFetch);
-  }, [city, street, house])
+  //     return () => clearTimeout(debounceFetch);
+  // }, [city, street, house])
 
 
   // Yetkazib berish vaqtlari

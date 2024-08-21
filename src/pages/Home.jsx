@@ -68,7 +68,7 @@ export const Home = () => {
             }}
           >
             <SwiperSlide>
-              <img src="/slider/harry.webp" decoding="async" loading="eager" alt="Лакинск/Собинка доставка суши" />
+              <img src="/slider/gym.webp" decoding="async" loading="eager" alt="Лакинск/Собинка доставка суши" />
             </SwiperSlide>
             <SwiperSlide>
               <img src="/slider/hb.webp" decoding="async" loading="eager" alt="Лакинск/Собинка Доставка день рождения скидки" />

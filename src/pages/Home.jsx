@@ -67,6 +67,10 @@ export const Home = () => {
               disableOnInteraction: true,
             }}
           >
+
+            <SwiperSlide>
+              <img src="/slider/howa.png" decoding="async" loading="eager" alt="Лакинск/Собинка Доставка день рождения скидки" />
+            </SwiperSlide>
             <SwiperSlide>
               <img src="/slider/hb.webp" decoding="async" loading="eager" alt="Лакинск/Собинка Доставка день рождения скидки" />
             </SwiperSlide>

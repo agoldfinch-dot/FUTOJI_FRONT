@@ -69,10 +69,10 @@ export const ProductCard = ({ selectedCategory, product }) => {
                       onClick={() => handleAddToBasket(item)}
                       disabled={basket.some((basketItem) => basketItem.id === item.id)}
                     >
-                      В корзине
-                      {/* {basket.some((basketItem) => basketItem.id === item.id)
-                        ? "В корзине"
-                        : "Добавить в корзину"} */}
+                    
+                      {basket.some((basketItem) => basketItem.id === item.id)
+                        ? "В корзину"
+                        : "Добавить в корзину"} 
                     </button>
                   </div>
                 </div>

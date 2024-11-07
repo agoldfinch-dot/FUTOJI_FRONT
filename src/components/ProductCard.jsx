@@ -71,8 +71,8 @@ export const ProductCard = ({ selectedCategory, product }) => {
                     >
                     
                       {basket.some((basketItem) => basketItem.id === item.id)
-                        ? "В корзину"
-                        : "Добавить в корзину"} 
+                        ? "В корзине"
+                        : "В корзину"} 
                     </button>
                   </div>
                 </div>

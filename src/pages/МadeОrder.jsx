@@ -6,7 +6,7 @@ import { BasketContext } from "../context/BasketContext";
 
 
 export const МadeОrder = () => {
-  const [showOrderList, setShowOrderList] = useState(false);
+  const [showOrderList, setShowOrderList] = useState(true);
   const location = useLocation();
   const { basket, clearBasket } = useContext(BasketContext);
 
@@ -40,9 +40,9 @@ export const МadeОrder = () => {
         <a href="https://yandex.ru/maps/org/futodzhi/108652319254/">
         <img src="/slider/promo2.webp" alt="Лакинск Отзыв Подарок Розыгрыш" />
         </a>
-        <button className="blur__btn" onClick={handleShowOrderList}>
+        {/* <button className="blur__btn" onClick={handleShowOrderList}>
           Посмотреть заказ
-        </button>
+        </button> */}
         {showOrderList && <OrderList deliveryAddress={deliveryAddress} endPrice={responseData?.totalPrice} basketItem={finalBasket} />}
         <Link className="add__cart-btn" to="/products/Пицца">
           Назад к меню

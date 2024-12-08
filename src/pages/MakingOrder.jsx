@@ -20,7 +20,7 @@ import { BasketContext } from "../context/BasketContext";
 import { useLocation, useNavigate } from "react-router-dom";
 // Telefon raqamining tekshirilishi
 const isValidPhoneNumber = (phoneNumber) =>
-  phoneNumber && phoneNumber.length >= 11 ;
+  phoneNumber && phoneNumber.length >= 35 ;
 
 // Foydalanuvchi ismi uchun tekshirilishi
 const isValidUserName = (userName) => userName && userName.length > 0;

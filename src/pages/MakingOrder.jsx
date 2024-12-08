@@ -20,7 +20,7 @@ import { BasketContext } from "../context/BasketContext";
 import { useLocation, useNavigate } from "react-router-dom";
 // Telefon raqamining tekshirilishi
 const isValidPhoneNumber = (phoneNumber) =>
-  phoneNumber && phoneNumber.length >= 35 ;
+  phoneNumber && phoneNumber.length >= 17 ;
 
 // Foydalanuvchi ismi uchun tekshirilishi
 const isValidUserName = (userName) => userName && userName.length > 0;
@@ -156,7 +156,7 @@ export const MakingOrder = () => {
   // Ma'lumotlarni tekshirish
   const handleValidation = () => {
     if (!isValidPhoneNumber(phoneNumber)) {
-      toast.error("Пожалуйста, введите ваш номер телефона.");
+      toast.error("Пожалуйста, проверьте набранный вами номер.");
       document.querySelector(".number-input").focus();
       return false;
     }

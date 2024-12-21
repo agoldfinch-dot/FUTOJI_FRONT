@@ -107,7 +107,7 @@ export const Home = () => {
               <img src={assets.product1} id="sets" decoding="async" loading="lazy" alt="Сеты Суши Лакинск" />
               <h6>СЕТЫ</h6>
             </Link>
-            <div className="products_blocks">
+            <div className="products_blocks pr_left">
               <Link
                 to="/products/Горячие%20роллы"
                 className="products_block mini_block product_blocks_in"
@@ -118,6 +118,7 @@ export const Home = () => {
                   <br /> РОЛЛЫ
                 </h6>
               </Link>
+              
               <div className="products_blocks_two product_blocks_in">
                 <Link to="/products/Пицца" className="products_block">
                   <img src={assets.product3} decoding="async" loading="lazy" alt="Пицца Лакинск/Собинка" />
@@ -127,9 +128,16 @@ export const Home = () => {
                   <img src={assets.product4} decoding="async" loading="lazy" alt="Вок Лакинск/Собинка" />
                   <h6>ВОК</h6>
                 </Link>
-              </div>
+              </div> 
+              
             </div>
+            <Link to="/products/Суши" className="products_block product_one">
+              <img src={assets.sushi} decoding="async" loading="lazy" alt="Напитки Лакинск/Собинка" />
+              <h6>СУШИ</h6>
+            </Link>
           </div>
+          
+          
           <div className="products_right">
             <div className="products_blocks">
               <Link to="/products/Холодные%20роллы" className="products_block product_blocks_in">
@@ -158,8 +166,27 @@ export const Home = () => {
               <img src={assets.product8} decoding="async" loading="lazy" alt="Напитки Лакинск/Собинка" />
               <h6>НАПИТКИ</h6>
             </Link>
+            <div className="products_blocks_two product_blocks_in half_block">
+                <Link to="/products/Супы" className="products_block mini_block">
+                  <img src={assets.supi} decoding="async" loading="lazy" alt="Сяки Маки Лакинск/Собинка" />
+                  <h6>
+                    СУПЫ
+                  </h6>
+                </Link>
+                <Link to="/products/Салаты" id="salad" className="products_block mini_block">
+                  <img src={assets.salatik} decoding="async" loading="lazy" alt="Сяки Маки Лакинск/Собинка" />
+                  <h6>
+                    САЛАТЫ
+                  </h6>
+                </Link>
+              </div>
+            
           </div>
+          
+         
         </div>
+        
+        
 
 
         <div className="products_in desktop_media">
@@ -231,6 +258,29 @@ export const Home = () => {
               <h6>НАПИТКИ</h6>
             </Link>
           </div>
+          <div className="products_blocks">
+          
+          <div className="products_blocks_two product_blocks_in">
+            <Link to="/products/Фаст%20Фуд" className="products_block">
+              <img src={assets.supi}  decoding="async" loading="lazy" alt="" />
+              <h6>
+                СУПЫ
+              </h6>
+            </Link>
+            <Link to="/products/Салаты" id="salad" className="products_block">
+              <img src={assets.salatik}  decoding="async" loading="lazy" alt="" />
+              <h6>САЛАТЫ</h6>
+            </Link>
+           
+          </div>
+        </div>
+          <Link to="/products/Суши" className="products_block product_one">
+              <img src={assets.sushi}  decoding="async" loading="lazy" alt="" />
+              <h6>СУШИ</h6>
+            </Link>
+         
+
+            
         </div>
       </section>
     </>

@@ -112,6 +112,7 @@
 
 // products
 .products {
+ 
   position: relative;
   padding: 128px 25px 206px 25px;
 
@@ -149,7 +150,7 @@
     display: flex;
     align-items: stretch;
     gap: 21px;
-    height: 606px;
+    height: 800px;
   }
 
   .products_left {
@@ -171,7 +172,7 @@
     object-fit: cover;
     align-items: stretch;
     gap: 21px;
-    height: calc(100% / 3 * 2 - 10.5px);
+    height: calc(100% / 2  - 10.5px);
 
     .product_blocks_in {
       width: 100%;
@@ -180,8 +181,13 @@
         object-fit: cover;
       }
     }
+    
   }
 
+  .pr_left
+  {
+    
+  }
   .products_blocks_two {
     display: flex;
     flex-direction: column;
@@ -199,6 +205,15 @@
         object-fit: cover;
       }
     }
+  }
+  .half_block
+  {
+    .products_block
+    {
+      height: 100%;
+    }
+    height: calc(100% / 4.5  - 10.5px);
+    flex-direction: row;
   }
   #rolls
   {
@@ -232,7 +247,7 @@
   }
 
   .product_one {
-    height: calc(100% / 3 - 10.5px);
+    height: calc(100% / 4.5  - 10.5px);
     flex-shrink: 0;
     max-width: 100%;
     img {
@@ -1031,5 +1046,11 @@
         color: #d9d9d9;
       }
     }
+  }
+}
+
+#salad{
+  h6{
+    margin-left:40% ;  
   }
 }

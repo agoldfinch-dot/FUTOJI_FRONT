@@ -29,7 +29,9 @@ import topGradient from "./top-gradient.webp";
 import closeIcon from "./icons/close-icon.svg";
 import minusIcon from "./icons/minus-icon.svg";
 import plusIcon from "./icons/plus-icon.svg";
-
+import salatik from "./salatik.jpg"
+import supi from "./supi.jpg"
+import sushi from "./sushi.jpg";
 
 export default {
   headerBurger,
@@ -44,6 +46,9 @@ export default {
   vkIcon,
   footerMediaLogo,
   downIcon,
+  salatik,
+  supi,
+  sushi,
   footerLogo1,
   footerLogo2,
   footerLogo3,

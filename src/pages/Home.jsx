@@ -274,7 +274,7 @@ export const Home = () => {
            
           </div>
         </div>
-          <Link to="/products/Суши" className="products_block product_one">
+          <Link to="/products/Суши" id="sushiM" className="products_block product_one">
               <img src={assets.sushi}  decoding="async" loading="lazy" alt="" />
               <h6>СУШИ</h6>
             </Link>

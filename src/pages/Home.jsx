@@ -261,7 +261,7 @@ export const Home = () => {
           <div className="products_blocks">
           
           <div className="products_blocks_two product_blocks_in">
-            <Link to="/products/Фаст%20Фуд" className="products_block">
+            <Link to="/products/Супы" className="products_block">
               <img src={assets.supi}  decoding="async" loading="lazy" alt="" />
               <h6>
                 СУПЫ

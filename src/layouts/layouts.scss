@@ -2,6 +2,7 @@ header {
   z-index: 100;
   position: sticky;
   top: 0;
+  background: url("sa.png");
 }
 .header_menu {  
   position: absolute;
@@ -102,7 +103,8 @@ header {
 
 // header
 header {
-  background: rgb(14, 16, 24);
+  background: url("sl.png");
+  background-size: cover;
   max-width: 100%;
   margin: 0 auto;
 

@@ -413,8 +413,15 @@ export const MakingOrder = () => {
                       )}
                     </div>
                   </form>
-
+                
                 </FormSection>
+                <a href="https://vk.com/@futoji33-kontaktnaya-informaciya">
+                <Button
+                  label="Условия доставки"
+                  className="deliv send_btn"
+                  
+                />
+                </a>
                 <FormSection>
                   <div className="comments_box">
                     <FormTextArea

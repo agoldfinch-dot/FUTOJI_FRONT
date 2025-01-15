@@ -748,6 +748,7 @@
       }
     }
   }
+  
   .send_btn {
     width: fit-content;
     margin-left: auto;
@@ -775,6 +776,11 @@
       font-size: 16px;
       padding: 0 23px;
     }
+  }
+  .deliv {
+    width: 100%;
+    background:#fc3f1d !important;
+    color: #d9d9d9;
   }
   .ways_pay {
     .form_item {

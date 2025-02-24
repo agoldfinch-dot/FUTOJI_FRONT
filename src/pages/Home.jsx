@@ -69,7 +69,7 @@ export const Home = () => {
           >
 
             <SwiperSlide>
-              <img src="/slider/amen.webp" decoding="async" loading="eager" alt="Лакинск/Собинка Доставка день рождения скидки" />
+              <img src="/slider/blin.png" decoding="async" loading="eager" alt="Лакинск/Собинка Доставка день рождения скидки" />
             </SwiperSlide>
             <SwiperSlide>
               <img src="/slider/hb.webp" decoding="async" loading="eager" alt="Лакинск/Собинка Доставка день рождения скидки" />

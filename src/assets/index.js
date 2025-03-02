@@ -32,6 +32,10 @@ import plusIcon from "./icons/plus-icon.svg";
 import salatik from "./salatik.jpg"
 import supi from "./supi.jpg"
 import sushi from "./sushi.jpg";
+import napi from "./napi.jpg"
+import roligo from "./rolligo.jpg"
+import rolimob from './rolimob.jpg';
+import pizza33 from "./pizza33.jpg"
 
 export default {
   headerBurger,
@@ -48,6 +52,8 @@ export default {
   downIcon,
   salatik,
   supi,
+  rolimob,
+  roligo,
   sushi,
   footerLogo1,
   footerLogo2,
@@ -68,4 +74,6 @@ export default {
   closeIcon,
   minusIcon,
   plusIcon,
+  napi,
+  pizza33
 };

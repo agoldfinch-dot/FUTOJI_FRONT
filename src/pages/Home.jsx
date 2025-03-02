@@ -69,9 +69,6 @@ export const Home = () => {
           >
 
             <SwiperSlide>
-              <img src="/slider/blin.png" decoding="async" loading="eager" alt="Лакинск/Собинка Доставка день рождения скидки" />
-            </SwiperSlide>
-            <SwiperSlide>
               <img src="/slider/hb.webp" decoding="async" loading="eager" alt="Лакинск/Собинка Доставка день рождения скидки" />
             </SwiperSlide>
 
@@ -105,7 +102,7 @@ export const Home = () => {
           <div className="products_left">
             <Link to="/products/Сеты%20и%20наборы" className="products_block product_one">
               <img src={assets.product1} id="sets" decoding="async" loading="lazy" alt="Сеты Суши Лакинск" />
-              <h6>СЕТЫ</h6>
+              <h6>СЕТЫ <br/> <a id="kitaishina">セット</a></h6>
             </Link>
             <div className="products_blocks pr_left">
               <Link
@@ -117,67 +114,94 @@ export const Home = () => {
                   ГОРЯЧИЕ
                   <br /> РОЛЛЫ
                 </h6>
+                <h6 id = "roligar">
+                <a id="kitaishina">ホット<br/>ロール</a>
+                </h6>
               </Link>
               
               <div className="products_blocks_two product_blocks_in">
-                <Link to="/products/Пицца" className="products_block">
+                <Link to="/products/Пиццы%2025%20см" className="products_block">
                   <img src={assets.product3} decoding="async" loading="lazy" alt="Пицца Лакинск/Собинка" />
-                  <h6>ПИЦЦА</h6>
+                  <h6>ПИЦЦА <br/> <br/> <a id="kitaishina">ピ<br/>ザ<br/></a> <br/> <br/> <br/><b>25 СМ</b></h6>
                 </Link>
                 <Link to="/products/WOK" className="products_block">
                   <img src={assets.product4} decoding="async" loading="lazy" alt="Вок Лакинск/Собинка" />
-                  <h6>ВОК</h6>
+                  <h6>ВОК <br/><br/><a id="kitaishina">中<br/>華<br/>鍋</a></h6>
                 </Link>
               </div> 
               
             </div>
             <Link to="/products/Суши" className="products_block product_one">
               <img src={assets.sushi} decoding="async" loading="lazy" alt="Напитки Лакинск/Собинка" />
-              <h6>СУШИ</h6>
+              <h6>СУШИ <br/><br/><a id="kitaishina">&nbsp;&nbsp;&nbsp;&nbsp;寿<br/>司</a><br/></h6>
             </Link>
           </div>
           
           
           <div className="products_right">
             <div className="products_blocks">
-              <Link to="/products/Холодные%20роллы" className="products_block product_blocks_in">
+              <Link to="/products/Пиццы%2033%20см" className="products_block product_blocks_in">
                 <img id="rolls" decoding="async" src={assets.product5} loading="lazy" alt="Роллы Лакинск/Собинка" />
-                <h6>ХОЛОДНЫЕ РОЛЛЫ</h6>
+                <h6>П<br/>И<br/>Ц<br/>Ц<br/>Ы<br/><br/><br/><br/><br/><br/><br/><a id="kitaishina">ピ<br/>ザ<br/>を<br/>焼<br/>く</a>
+                  <br/> <b>33 СМ</b></h6>
               </Link>
               <div className="products_blocks_two product_blocks_in">
                 <Link to="/products/Сяке%20маки" className="products_block mini_block">
                   <img src={assets.product6} decoding="async" loading="lazy" alt="Сяки Маки Лакинск/Собинка" />
                   <h6>
                     СЯКИ
-                    <br /> МАКИ
+                    <br /> МАКИ           
+                  </h6>
+                  <h6 id="makiga"><a id="kitaishina">真<br/>木<br/>沙<br/>耶<br/>香</a></h6>
+                </Link>
+                <Link to="/products/Холодные%20роллы" className="products_block mini_block">
+                  <img src={assets.roligo} decoding="async" loading="lazy" alt="Фаст фуд Лакинск/Собинка" />
+                  <h6>
+                  ХОЛОДНЫЕ <br/>
+                  РОЛЛЫ
+                  <br/><br/><br/><br/><br/>
+                  <a id="kitaishina">冷間ロール</a>
+                  </h6>
+                </Link>
+              </div>
+            </div>
+            {/* <Link to="/products/Напитки" className="products_block product_one">
+              <img src={assets.product8} decoding="async" loading="lazy" alt="Напитки Лакинск/Собинка" />
+              <h6>НАПИТКИ</h6>
+            </Link>  */}
+            <div className="products_blocks_two product_blocks_in half_block">
+                <Link to="/products/Напитки" className="products_block mini_block">
+                  <img src={assets.napi} decoding="async" loading="lazy" alt="Сяки Маки Лакинск/Собинка" />
+                  <h6>
+                    НАПИТКИ<br/>
+                    <br/><a id="kitaishina">飲<br/>&nbsp;&nbsp;&nbsp;&nbsp;み<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;物</a> 
                   </h6>
                 </Link>
                 <Link to="/products/Фаст%20Фуд" className="products_block mini_block">
                   <img src={assets.product7} decoding="async" loading="lazy" alt="Фаст фуд Лакинск/Собинка" />
                   <h6>
-                    ФАСТ
+                  <a id="kitaishina">フ ード</a><br />
+                  <a id="kitaishina">ァ</a>ФУД
+                    <br /><a id="kitaishina">ー</a>А<br /><a id="kitaishina">ス</a>С<br /><a id="kitaishina">ト</a>Т
                     <br />
-                    ФУД
+                    
+                   
                   </h6>
                 </Link>
               </div>
-            </div>
-            <Link to="/products/Напитки" className="products_block product_one">
-              <img src={assets.product8} decoding="async" loading="lazy" alt="Напитки Лакинск/Собинка" />
-              <h6>НАПИТКИ</h6>
-            </Link>
             <div className="products_blocks_two product_blocks_in half_block">
                 <Link to="/products/Супы" className="products_block mini_block">
                   <img src={assets.supi} decoding="async" loading="lazy" alt="Сяки Маки Лакинск/Собинка" />
                   <h6>
-                    СУПЫ
+                    СУПЫ<br/> <br/><a id="kitaishina">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ス<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ー<br/>&nbsp;&nbsp;プ </a>
                   </h6>
                 </Link>
                 <Link to="/products/Салаты" id="salad" className="products_block mini_block">
                   <img src={assets.salatik} decoding="async" loading="lazy" alt="Сяки Маки Лакинск/Собинка" />
                   <h6>
                     САЛАТЫ
-                  </h6>
+                    <br/><br/><a id="kitaishina">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;サ<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ラ<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ダ
+                  </a></h6>
                 </Link>
               </div>
             
@@ -202,7 +226,7 @@ export const Home = () => {
                 to="/products/Холодные%20роллы"
                 className="products_block mini_block product_blocks_in left-img"
               >
-                <img id="rolls" decoding="async" src={assets.product5} loading="lazy" alt="" />
+                <img id="rolls" decoding="async" src={assets.rolimob} loading="lazy" alt="" />
                 <h6>
                   ХОЛОДНЫЕ
                   <br />
@@ -238,25 +262,36 @@ export const Home = () => {
                   </h6>
                 </Link>
                 <div className="products_blocks_two product_blocks_in">
-                  <Link to="/products/Пицца" className="products_block">
+                  <Link to="/products/Пиццы%2033%20см" className="products_block">
                     <img src={assets.product3}  decoding="async" loading="lazy" alt="" />
-                    <h6>ПИЦЦА</h6>
+                    <h6>ПИЦЦЫ <br/>
+                    33 СМ</h6>
                   </Link>
-                  <Link to="/products/Фаст%20Фуд" className="products_block">
-                    <img src={assets.product7}  decoding="async" loading="lazy" alt="" />
+                  <Link to="/products/Пиццы%2025%20см" className="products_block">
+                    <img src={assets.pizza33}  decoding="async" loading="lazy" alt="" />
                     <h6>
-                      ФАСТ
+                      ПИЦЦЫ
                       <br />
-                      ФУД
+                      25 СМ
                     </h6>
                   </Link>
                 </div>
               </div>
             </div>
-            <Link to="/products/Напитки" className="products_block product_one">
-              <img src={assets.product8}  decoding="async" loading="lazy" alt="" />
-              <h6>НАПИТКИ</h6>
+            <div className="products_blocks_two product_blocks_in">
+            <Link to="/products/Напитки" className="products_block">
+              <img src={assets.napi}  decoding="async" loading="lazy" alt="" />
+              <h6>
+                НАПИТКИ
+              </h6>
             </Link>
+            <Link to="/products/Фаст%20фуд"  className="products_block">
+              <img src={assets.product7}  decoding="async" loading="lazy" alt="" />
+              <h6>ФАСТ <br/> ФУД</h6>
+            </Link>
+           
+          </div>
+            
           </div>
           <div className="products_blocks">
           

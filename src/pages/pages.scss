@@ -212,12 +212,26 @@
     {
       height: 100%;
     }
-    height: calc(100% / 4.5  - 10.5px);
+    height: calc(100% / 4.5  - 2.8px);
     flex-direction: row;
   }
   #rolls
   {
     object-fit: cover;
+
+  }
+  #makiga
+  {
+    margin-left: 70%;
+  }
+  #roligar
+  {
+    margin-left: 50%;
+    margin-top: 120%;
+  }
+  #kitaishina
+  {
+    color: #fc3f1d;
   }
   .products_block {
     width: 100%;

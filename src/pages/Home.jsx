@@ -142,7 +142,7 @@ export const Home = () => {
             <div className="products_blocks">
               <Link to="/products/Пиццы%2033%20см" className="products_block product_blocks_in">
                 <img id="rolls" decoding="async" src={assets.product5} loading="lazy" alt="Роллы Лакинск/Собинка" />
-                <h6>П<br/>И<br/>Ц<br/>Ц<br/>Ы<br/><br/><br/><br/><br/><br/><br/><a id="kitaishina">ピ<br/>ザ<br/>を<br/>焼<br/>く</a>
+                <h6>П<br/>И<br/>Ц<br/>Ц<br/>А<br/><br/><br/><br/><br/><br/><br/><a id="kitaishina">ピ<br/>ザ<br/>を<br/>焼<br/>く</a>
                   <br/> <b>33 СМ</b></h6>
               </Link>
               <div className="products_blocks_two product_blocks_in">

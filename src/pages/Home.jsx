@@ -264,13 +264,13 @@ export const Home = () => {
                 <div className="products_blocks_two product_blocks_in">
                   <Link to="/products/Пиццы%2033%20см" className="products_block">
                     <img src={assets.product3}  decoding="async" loading="lazy" alt="" />
-                    <h6>ПИЦЦЫ <br/>
+                    <h6>ПИЦЦА <br/>
                     33 СМ</h6>
                   </Link>
                   <Link to="/products/Пиццы%2025%20см" className="products_block">
                     <img src={assets.pizza33}  decoding="async" loading="lazy" alt="" />
                     <h6>
-                      ПИЦЦЫ
+                      ПИЦЦА
                       <br />
                       25 СМ
                     </h6>

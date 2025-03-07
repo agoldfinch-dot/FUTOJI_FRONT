@@ -67,10 +67,16 @@ export const Home = () => {
               disableOnInteraction: true,
             }}
           >
+            <SwiperSlide>
+              <a href="/futoji.apk">
+              <img src="/slider/pril.png" decoding="async" alt="Лакинск Отзыв Подарок Розыгрыш" />
+              </a>
+            </SwiperSlide>
 
             <SwiperSlide>
               <img src="/slider/hb.webp" decoding="async" loading="eager" alt="Лакинск/Собинка Доставка день рождения скидки" />
             </SwiperSlide>
+            
 
             <SwiperSlide>
               <a href="https://yandex.ru/maps/org/futodzhi/108652319254/">

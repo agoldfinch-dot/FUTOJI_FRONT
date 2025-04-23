@@ -68,9 +68,8 @@ export const Home = () => {
             }}
           >
             <SwiperSlide>
-              <a href="/futoji.apk">
-              <img src="/slider/pril.png" decoding="async" alt="Лакинск Отзыв Подарок Розыгрыш" />
-              </a>
+              <img src="/slider/pizzza.png" decoding="async" alt="Лакинск Отзыв Пиццы Дешево" />
+
             </SwiperSlide>
 
             <SwiperSlide>

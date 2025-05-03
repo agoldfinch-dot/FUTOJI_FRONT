@@ -1,6 +1,7 @@
 import { getImageUrl } from "../utils/helpers";
 import { useContext } from "react";
 import { BasketContext } from "../context/BasketContext";
+import { Button } from "../components/Form"
 
 export const OrderList = ({ deliveryAddress, endPrice, basketItem}) => {
   const { basket } = useContext(BasketContext);
@@ -69,7 +70,22 @@ export const OrderList = ({ deliveryAddress, endPrice, basketItem}) => {
           </div>
           <div className="total_price">
             <span className="total">Итого к оплате:</span>
-            <span className="price">{endPrice ?? totalPrice} Р</span>
+            <span className="price">{totalPrice} Р *</span>
+          </div>
+          <div id ="boxfuck" className="delivery_box">
+
+          <span id = "fuckin">
+            <span className="total" id ='FuckThisPrice'>*Цена без учёта доставки!!!</span>
+          </span>
+          <span id ='fuck'>
+            <a href="https://vk.com/@futoji33-kontaktnaya-informaciya">
+                            <Button
+                              label="Условия доставки"
+                              className="idk deliv send_btn"
+
+                            />
+                            </a>
+                            </span>
           </div>
         </div>
       </div>

@@ -67,11 +67,7 @@ export const Home = () => {
               disableOnInteraction: true,
             }}
           >
-            <SwiperSlide>
-              <img src="/slider/pizzza.png" decoding="async" alt="Лакинск Отзыв Пиццы Дешево" />
-
-            </SwiperSlide>
-
+ 
             <SwiperSlide>
               <img src="/slider/hb.webp" decoding="async" loading="eager" alt="Лакинск/Собинка Доставка день рождения скидки" />
             </SwiperSlide>

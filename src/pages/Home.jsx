@@ -98,7 +98,10 @@ export const Home = () => {
         </div>
       </section>
       <section className="products">
-
+            <Link to="/products/Новинки" id="novi" className="products_block product_one">
+              <img src="/new.png"  decoding="async" loading="lazy" alt="Сеты Суши Лакинск" />
+              
+            </Link>
         <div className="products_in desktop_block">
           <div className="products_left">
           <Link to="/products/Сеты%20и%20наборы" className="products_block product_one">

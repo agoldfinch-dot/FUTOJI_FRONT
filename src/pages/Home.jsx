@@ -241,7 +241,7 @@ export const Home = () => {
           <div className="products_left">
              <Link to="/products/17%20см%20удовольствия"  className="products_block product_one">
                   <img src={assets.pancake}  decoding="async" loading="lazy" alt="Сяки Маки Лакинск/Собинка" />
-                  <h6 id = "panM" ><br/><br/>17 CМ<br/>РАДОСТИ
+                  <h6 id = "panM" ><br/><br/>17 CМ<br/>УДОВОЛЬСТВИЯ
                   
                   </h6>
                 </Link>

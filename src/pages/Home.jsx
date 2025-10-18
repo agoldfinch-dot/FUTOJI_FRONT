@@ -67,7 +67,10 @@ export const Home = () => {
               disableOnInteraction: true,
             }}
           >
- 
+            <SwiperSlide>
+              <img src="/slider/10.webp" decoding="async" loading="eager" alt="Лакинск/Собинка новым клиентам скидки" />
+            </SwiperSlide>
+            
             <SwiperSlide>
               <img src="/slider/hb.webp" decoding="async" loading="eager" alt="Лакинск/Собинка Доставка день рождения скидки" />
             </SwiperSlide>
@@ -104,10 +107,23 @@ export const Home = () => {
             </Link> */}
         <div className="products_in desktop_block">
           <div className="products_left">
-          <Link to="/products/Сеты%20и%20наборы" className="products_block product_one">
+             <div className="products_blocks_two product_blocks_in half_block">
+                <Link to="/products/17%20см%20удовольствия"  className="products_block mini_block">
+                  <img src={assets.pancake}  decoding="async" loading="lazy" alt="Сяки Маки Лакинск/Собинка" />
+                  <h6 id = "pan" ><br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;17 CМ<br/><a id="kitaishina">&nbsp;&nbsp;&nbsp;&nbsp;楽しみ</a>
+                  
+                  </h6>
+                </Link>
+                <Link to="/products/Сеты%20и%20наборы" className="products_block mini_block">
+                    <img src={assets.product1} id="sets" decoding="async" loading="lazy" alt="Сеты Суши Лакинск" />
+                    <h6>СЕТЫ <br/> <a id="kitaishina">セット</a></h6>
+                </Link>
+              </div>
+            {/* <Link to="/products/Сеты%20и%20наборы" className="products_block product_one">
               <img src={assets.product1} id="sets" decoding="async" loading="lazy" alt="Сеты Суши Лакинск" />
               <h6>СЕТЫ <br/> <a id="kitaishina">セット</a></h6>
-            </Link>
+            </Link> */}
+      
  
 
 
@@ -223,6 +239,12 @@ export const Home = () => {
 
         <div className="products_in desktop_media">
           <div className="products_left">
+             <Link to="/products/17%20см%20удовольствия"  className="products_block product_one">
+                  <img src={assets.pancake}  decoding="async" loading="lazy" alt="Сяки Маки Лакинск/Собинка" />
+                  <h6 id = "panM" ><br/><br/>17 CМ<br/>РАДОСТИ
+                  
+                  </h6>
+                </Link>
             <Link to="/products/Сеты%20и%20наборы"  className="products_block product_one">
               <img id="sets" src={assets.product1} loading="lazy" alt="" />
               <h6>

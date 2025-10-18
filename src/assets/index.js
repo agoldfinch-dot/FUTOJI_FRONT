@@ -25,6 +25,7 @@ import product5 from "./product5.jpg";
 import product6 from "./product6.jpg";
 import product7 from "./product7.jpg";
 import product8 from "./product8.jpg";
+import pancake from "./pan.png";
 import topGradient from "./top-gradient.webp";
 import closeIcon from "./icons/close-icon.svg";
 import minusIcon from "./icons/minus-icon.svg";
@@ -39,6 +40,7 @@ import pizza33 from "./pizza33.jpg"
 
 export default {
   headerBurger,
+  pancake,
   headerLogo,
   headerSearch,
   headerPhone,

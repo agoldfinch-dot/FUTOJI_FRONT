@@ -14,29 +14,29 @@ import footerLogo1 from "./logo/footer_logo1.svg";
 import footerLogo2 from "./logo/footer_logo2.svg";
 import footerLogo3 from "./logo/footer_logo3.svg";
 import footerLogo4 from "./logo/footer_logo4.svg";
-import homeSlider from "./home_slider.png";
+import homeSlider from "./home_slider.webp";
 import gradientBig from "./gradient-big.webp";
-import gradientBigMedia from "./gradient_big_media.png";
-import product1 from "./product1.jpg";
-import product2 from "./product2.jpg";
-import product3 from "./product3.jpg";
-import product4 from "./product4.jpg";
-import product5 from "./product5.jpg";
-import product6 from "./product6.jpg";
-import product7 from "./product7.jpg";
-import product8 from "./product8.jpg";
-import pancake from "./pan.png";
+import gradientBigMedia from "./gradient_big_media.webp";
+import product2 from "./product2.webp";
+import product1 from "./product1.webp";
+import product3 from "./product3.webp";
+import product4 from "./product4.webp";
+import product5 from "./product5.webp";
+import product6 from "./product6.webp";
+import product7 from "./product7.webp";
+import product8 from "./product8.webp";
+import pancake from "./pan.webp";
 import topGradient from "./top-gradient.webp";
 import closeIcon from "./icons/close-icon.svg";
 import minusIcon from "./icons/minus-icon.svg";
 import plusIcon from "./icons/plus-icon.svg";
-import salatik from "./salatik.jpg"
-import supi from "./supi.jpg"
-import sushi from "./sushi.jpg";
-import napi from "./napi.jpg"
-import roligo from "./rolligo.jpg"
-import rolimob from './rolimob.jpg';
-import pizza33 from "./pizza33.jpg"
+import salatik from "./salatik.webp"
+import supi from "./supi.webp"
+import sushi from "./sushi.webp";
+import napi from "./napi.webp"
+import roligo from "./rolligo.webp"
+import rolimob from './rolimob.webp';
+import pizza33 from "./pizza33.webp"
 
 export default {
   headerBurger,
